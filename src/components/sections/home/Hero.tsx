@@ -1,4 +1,4 @@
-import { Play } from "../icons/icons";
+import { Play } from "../../icons/icons";
 
 const Hero = () => {
   return (
