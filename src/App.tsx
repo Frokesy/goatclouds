@@ -1,11 +1,17 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Home from "./pages/home";
 
 function App() {
+  const router = createBrowserRouter([
+    { path: "/", element: <Home /> },
+  ]);
 
   return (
-    <>
-      <h2 className="text-[#ed12ac]">Hello World</h2>
-    </>
-  )
+    <AnimatePresence mode="wait">
+      <RouterProvider router={router} />
+    </AnimatePresence>
+  );
 }
 
-export default App
+export default App;
