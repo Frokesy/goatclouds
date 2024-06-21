@@ -33,7 +33,7 @@ const Header: FC<HeaderProps> = ({ active }) => {
           </button>
         </div>
 
-        <div className="block lg:hidden z-50">
+        <div className="block lg:hidden z-[100]">
           <Hamburger
             size={20}
             toggled={openDrawer}
