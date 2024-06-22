@@ -13,11 +13,11 @@ const SectionTwo = () => {
         <img src="/assets/logos/youtube.png" alt="youtube" />
       </div>
 
-      <div className="w-[80vw] mx-auto flex mt-[10vh] items-center space-x-10">
+      <div className="w-[80vw] mx-auto flex my-[15vh] items-center space-x-10">
         <img src="/assets/img_two.png" alt="img" />
         <div className="w-[50%]">
-          <div className="">
-            <div className=""></div>
+          <div className="flex items-center space-x-4">
+            <div className="bg-[#3e4784] h-1 w-10"></div>
             <p>About Us</p>
           </div>
           <h2 className="text-[48px] font-semibold">
