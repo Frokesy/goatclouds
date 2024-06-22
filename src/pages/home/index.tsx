@@ -1,5 +1,6 @@
 import Container from "../../components/defaults/Container"
 import Hero from "../../components/sections/home/Hero"
+import SectionEight from "../../components/sections/home/SectionEight"
 import SectionFive from "../../components/sections/home/SectionFive"
 import SectionFour from "../../components/sections/home/SectionFour"
 import SectionSeven from "../../components/sections/home/SectionSeven"
@@ -17,6 +18,7 @@ const Home = () => {
         <SectionFive />
         <SectionSix />
         <SectionSeven />
+        <SectionEight />
     </Container>
   )
 }

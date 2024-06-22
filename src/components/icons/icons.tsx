@@ -38,3 +38,21 @@ export const ArrowTopDiagonal = () => (
     />
   </svg>
 );
+
+export const ArrowTopDiagonalBlack = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5.83334 14.1663L14.1667 5.83301M14.1667 5.83301H5.83334M14.1667 5.83301V14.1663"
+      stroke="#000000"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
