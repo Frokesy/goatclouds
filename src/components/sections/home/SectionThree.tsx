@@ -7,27 +7,27 @@ const SectionThree = () => {
         <div className="h-0.5 w-6 bg-[#404040]"></div>
         <p>Our Team</p>
       </div>
-      <h2 className="text-[48px] font-semibold text-center">Meet our team</h2>
+      <h2 className="lg:text-[48px] text-[36px] font-semibold text-center">Meet our team</h2>
 
-      <div className="flex justify-between w-[90vw] mx-auto pt-14">
-        <div className="w-[45%]">
-          <h2 className="text-[30px]">
+      <div className="flex lg:flex-row flex-col justify-between w-[90vw] mx-auto lg:pt-14 pt-6">
+        <div className="lg:w-[45%]">
+          <h2 className="lg:text-[30px] text-[16px]">
             Meet the creative minds behind Goat Clouds Technologies, where
             innovation and expertise come together to craft exceptional digital
             experiences.
           </h2>
 
-          <button className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[16px] my-6">
+          <button className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[16px] lg:my-6 my-12">
             <p>See all members</p>
             <ArrowTopDiagonal />
           </button>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-16 w-[50%]">
-          <div className="border border-[#808080] rounded-2xl w-[300px]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 lg:w-[50%]">
+          <div className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]">
             <img
               src="/assets/team/fr_one.png"
-              className="w-[100%] h-[220px]"
+              className="w-[100%] lg:h-[220px] h-[250px]"
               alt="img"
             />
             <div className="space-y-2 my-3 px-4">
@@ -35,10 +35,10 @@ const SectionThree = () => {
               <p>Our team</p>
             </div>
           </div>
-          <div className="border border-[#808080] rounded-2xl w-[300px]">
+          <div className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]">
             <img
               src="/assets/team/fr_two.png"
-              className="w-[100%] h-[220px]"
+              className="w-[100%] lg:h-[220px] h-[250px]"
               alt="img"
             />
             <div className="space-y-2 my-3 px-4">
@@ -49,11 +49,11 @@ const SectionThree = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 w-[90vw] mx-auto gap-x-10 mt-14">
-        <div className="border border-[#808080] rounded-2xl w-[300px]">
+      <div className="grid lg:grid-cols-4 grid-cols-1 w-[90vw] mx-auto lg:gap-10 gap-16 mt-14">
+        <div className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]">
           <img
             src="/assets/team/fr_three.png"
-            className="w-[100%] h-[220px]"
+            className="w-[100%] lg:h-[220px] h-[250px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -61,10 +61,10 @@ const SectionThree = () => {
             <p>Our team</p>
           </div>
         </div>
-        <div className="border border-[#808080] rounded-2xl w-[300px]">
+        <div className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]">
           <img
             src="/assets/team/fr_four.png"
-            className="w-[100%] h-[220px]"
+            className="w-[100%] lg:h-[220px] h-[250px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -72,10 +72,10 @@ const SectionThree = () => {
             <p>Our team</p>
           </div>
         </div>
-        <div className="border border-[#808080] rounded-2xl w-[300px]">
+        <div className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]">
           <img
             src="/assets/team/fr_five.png"
-            className="w-[100%] h-[220px]"
+            className="w-[100%] lg:h-[220px] h-[250px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -83,10 +83,10 @@ const SectionThree = () => {
             <p>Our team</p>
           </div>
         </div>
-        <div className="border border-[#808080] rounded-2xl w-[300px]">
+        <div className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]">
           <img
             src="/assets/team/fr_six.png"
-            className="w-[100%] h-[220px]"
+            className="w-[100%] lg:h-[220px] h-[250px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">

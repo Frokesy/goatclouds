@@ -7,10 +7,10 @@ const SectionSix = () => {
         <div className="h-0.5 w-6 bg-[#404040]"></div>
         <p>Our Portfolio</p>
       </div>
-      <h2 className="text-[48px] font-semibold text-center">
+      <h2 className="lg:text-[48px] text-[36px] font-semibold text-center">
         Our Recent Works
       </h2>
-      <div className="grid grid-cols-2 gap-y-10 mt-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-10 mt-20">
         <div className="space-y-1">
           <img src="/assets/portfolio/po_one.png" alt="po_img" />
           <h2 className="text-[20px] font-semibold">GT-Tech Exchange</h2>

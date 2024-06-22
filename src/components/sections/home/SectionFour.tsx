@@ -5,11 +5,11 @@ const SectionFour = () => {
         <div className="h-0.5 w-6 bg-[#404040]"></div>
         <p>Our Services</p>
       </div>
-      <h2 className="text-[48px] w-[725px] font-semibold">
+      <h2 className="lg:text-[48px] text-[32px] lg:w-[725px] w-[90%] font-semibold">
         What we do at Goat Clouds Technologies
       </h2>
 
-      <div className="grid grid-cols-3 mt-14">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-0 gap-16 mt-14">
         <div className="space-y-3">
           <img src="/assets/services/img_one.png" alt="img" />
           <h2>Digital Product Design</h2>

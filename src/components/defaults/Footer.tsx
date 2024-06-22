@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <div className="bg-[#121212] text-[#fff] py-[15vh]">
       <div className="w-[90vw] mx-auto">
-        <div className="flex justify-between">
-          <h2 className="text-[24px] w-[320px] font-semibold">
+        <div className="flex lg:flex-row flex-col justify-between">
+          <h2 className="text-[24px] lg:w-[320px] font-semibold">
             Join our newsletter to keep up to date with us!
           </h2>
-          <div className="flex items-center space-x-3 mr-20">
-            <div className="border border-[#808080] flex items-center rounded-full w-[360px] py-3 px-6 space-x-6">
+          <div className="flex lg:flex-row flex-col lg:items-center lg:space-x-3 lg:mr-20 lg:mt-0 mt-10">
+            <div className="border border-[#808080] flex items-center lg:rounded-full rounded-xl lg:w-[360px] w-[100%] py-3 px-6 space-x-6">
               <UserIcon />
               <input
                 type="text"
@@ -17,15 +17,17 @@ const Footer = () => {
                 className="bg-inherit outline-none border-none"
               />
             </div>
-            <button className="bg-[#3e4784] py-3 px-6 rounded-full">
-              Subscribe
-            </button>
+            <div className="flex justify-end lg:mt-0 mt-6">
+              <button className="bg-[#3e4784] py-3 px-6 lg:rounded-full rounded-xl">
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
 
         <div className="border-b border-[#808080] my-14"></div>
 
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row flex-col justify-between">
           <div>
             <div className="flex items-center lg:space-x-3 space-x-2">
               <img
@@ -49,13 +51,13 @@ const Footer = () => {
               <GitHub />
             </div>
 
-            <p className="mt-[15vh]">
+            <p className="mt-[15vh] lg:block hidden">
               © 2024 goat CLOUDS tech. All rights reserved.
             </p>
           </div>
 
           <div className="">
-            <div className="flex space-x-10 mr-20">
+            <div className="flex lg:flex-row flex-col lg:space-x-10 lg:space-y-0 space-y-10 lg:mt-0 mt-10 lg:mr-20">
               <div className="space-y-4">
                 <h2 className="text-[20px] font-semibold">Let&apos;s talk</h2>
                 <p className="text-[15px] pb-4">+234 812 345 6789</p>
@@ -77,11 +79,14 @@ const Footer = () => {
                 <p className="text-[15px]">Contact Us</p>
               </div>
             </div>
-            <div className="mt-[15vh] space-x-10 ml-10 flex">
+            <div className="lg:mt-[15vh] mt-10 space-x-10 lg:ml-10 flex">
               <p>Terms of Service</p>
               <p>Privacy Policy</p>
               <p>Cookies</p>
             </div>
+            <p className="mt-[15vh] block lg:hidden">
+              © 2024 goat CLOUDS tech. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
