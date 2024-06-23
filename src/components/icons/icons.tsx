@@ -185,3 +185,302 @@ export const Instagram = () => (
     />
   </svg>
 );
+
+export const Experience = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="4" y="4" width="48" height="48" rx="24" fill="#EAECF5" />
+    <rect
+      x="4"
+      y="4"
+      width="48"
+      height="48"
+      rx="24"
+      stroke="#F8F9FC"
+      strokeWidth="8"
+    />
+    <path
+      d="M28 38L26 32H18L20 38H28ZM28 38H32"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M28 29V28.5C28 26.6144 28 25.6716 27.4142 25.0858C26.8284 24.5 25.8856 24.5 24 24.5C22.1144 24.5 21.1716 24.5 20.5858 25.0858C20 25.6716 20 26.6144 20 28.5V29"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M35 29C35 30.1046 34.1046 31 33 31C31.8954 31 31 30.1046 31 29C31 27.8954 31.8954 27 33 27C34.1046 27 35 27.8954 35 29Z"
+      stroke="#121212"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M26 20C26 21.1046 25.1046 22 24 22C22.8954 22 22 21.1046 22 20C22 18.8954 22.8954 18 24 18C25.1046 18 26 18.8954 26 20Z"
+      stroke="#121212"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M30 33.5H36C37.1046 33.5 38 34.3954 38 35.5V36C38 37.1046 37.1046 38 36 38H35"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const Bulb = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="4" y="4" width="48" height="48" rx="24" fill="#EAECF5" />
+    <rect
+      x="4"
+      y="4"
+      width="48"
+      height="48"
+      rx="24"
+      stroke="#F8F9FC"
+      strokeWidth="8"
+    />
+    <path
+      d="M22.0894 30.998C21.711 30.1474 21.5 29.2011 21.5 28.2039C21.5 24.5004 24.4102 21.498 28 21.498C31.5899 21.498 34.5 24.5004 34.5 28.2039C34.5 29.2011 34.289 30.1474 33.9106 30.998"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M28 17.998V18.998"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M38 27.998H37"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19 27.998H18"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M35.0704 20.9277L34.3633 21.6348"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M21.6368 21.6348L20.9297 20.9277"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M30.5165 35.3055C31.5269 34.9786 31.9321 34.0538 32.0461 33.1236C32.0801 32.8458 31.8515 32.6152 31.5715 32.6152L24.4764 32.6154C24.1868 32.6155 23.9542 32.8612 23.9888 33.1488C24.1004 34.0771 24.3822 34.7553 25.453 35.3055M30.5165 35.3055C30.5165 35.3055 25.6292 35.3055 25.453 35.3055M30.5165 35.3055C30.395 37.2505 29.8333 38.0207 28.0063 37.9991C26.0521 38.0352 25.6025 37.0831 25.453 35.3055"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const ArrowedUser = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="4" y="4" width="48" height="48" rx="24" fill="#EAECF5" />
+    <rect
+      x="4"
+      y="4"
+      width="48"
+      height="48"
+      rx="24"
+      stroke="#F8F9FC"
+      strokeWidth="8"
+    />
+    <path
+      d="M23.1801 31.2964C21.9225 32.0335 18.6252 33.5386 20.6335 35.422C21.6145 36.342 22.7071 37 24.0808 37H31.9192C33.2929 37 34.3855 36.342 35.3665 35.422C37.3748 33.5386 34.0775 32.0335 32.8199 31.2964C29.8709 29.5679 26.1291 29.5679 23.1801 31.2964Z"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M32 23C32 25.2091 30.2091 27 28 27C25.7909 27 24 25.2091 24 23C24 20.7909 25.7909 19 28 19C30.2091 19 32 20.7909 32 23Z"
+      stroke="#121212"
+      strokeWidth="1.5"
+    />
+    <path
+      d="M37.6555 24.5L38.4031 23.7955C38.801 23.4205 39 23.233 39 23C39 22.767 38.801 22.5795 38.4031 22.2045L37.6555 21.5M38.9794 23H35"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M18.3445 24.5L17.5969 23.7955C17.199 23.4205 17 23.233 17 23C17 22.767 17.199 22.5795 17.5969 22.2045L18.3445 21.5M17.0206 23H21"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const Diagonals = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="4" y="4" width="48" height="48" rx="24" fill="#EAECF5" />
+    <rect
+      x="4"
+      y="4"
+      width="48"
+      height="48"
+      rx="24"
+      stroke="#F8F9FC"
+      strokeWidth="8"
+    />
+    <path
+      d="M24 19.0978C24 19.0978 20.0337 18.7419 19.3878 19.3879C18.7419 20.0338 19.0978 24 19.0978 24"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M24 36.9022C24 36.9022 20.0337 37.2581 19.3878 36.6122C18.7419 35.9662 19.0978 32 19.0978 32"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M32 19.0978C32 19.0978 35.9663 18.7419 36.6122 19.3879C37.2581 20.0338 36.9022 24 36.9022 24"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M32 36.9022C32 36.9022 35.9663 37.2581 36.6122 36.6122C37.2581 35.9662 36.9022 32 36.9022 32"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M30.0107 25.999L36.0625 19.9473"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M25.9969 30.002L19.6396 36.3803"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M25.9973 26.0029L19.8457 19.8594"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M29.9795 30.002L36.5279 36.4979"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const BrokenHeart = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="4" y="4" width="48" height="48" rx="24" fill="#EAECF5" />
+    <rect
+      x="4"
+      y="4"
+      width="48"
+      height="48"
+      rx="24"
+      stroke="#F8F9FC"
+      strokeWidth="8"
+    />
+    <path
+      d="M28.0001 20.7597C28.0001 20.7597 30.8662 17.6038 34.8579 19.7447C38.2607 21.5698 39.4406 27.1406 35.6429 31.8521M28.0001 20.7597C28.0001 20.7597 25.1338 17.6038 21.1421 19.7447C16.3074 22.3377 15.9602 32.492 28.0001 37C31.5658 35.6649 34.045 33.8346 35.6429 31.8521M28.0001 20.7597L24.7309 23.2052C23.7688 23.9249 23.5581 25.2813 24.2564 26.259C24.9496 27.2295 26.2879 27.4747 27.2802 26.8132L30 25L35.6429 31.8521"
+      stroke="#121212"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const CircledCheck = () => (
+  <svg
+    width="56"
+    height="56"
+    viewBox="0 0 56 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect x="4" y="4" width="48" height="48" rx="24" fill="#EAECF5" />
+    <rect
+      x="4"
+      y="4"
+      width="48"
+      height="48"
+      rx="24"
+      stroke="#F8F9FC"
+      strokeWidth="8"
+    />
+    <path
+      d="M38 27.0799V27.9999C37.9988 30.1563 37.3005 32.2545 36.0093 33.9817C34.7182 35.7088 32.9033 36.9723 30.8354 37.5838C28.7674 38.1952 26.5573 38.1218 24.5345 37.3744C22.5117 36.6271 20.7847 35.246 19.611 33.4369C18.4373 31.6279 17.8798 29.4879 18.0217 27.3362C18.1636 25.1844 18.9972 23.1362 20.3983 21.4969C21.7994 19.8577 23.6928 18.7152 25.7962 18.24C27.8996 17.7648 30.1003 17.9822 32.07 18.8599M38 19.9999L28 30.0099L25 27.0099"
+      stroke="#101828"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
