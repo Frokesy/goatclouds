@@ -1,6 +1,7 @@
 import Hamburger from "hamburger-react";
 import { FC, useState } from "react";
 import Drawer from "./Drawer";
+import { NavLink } from "react-router-dom";
 
 interface HeaderProps {
   active: string;
@@ -19,11 +20,13 @@ const Header: FC<HeaderProps> = ({ active }) => {
             alt="logo"
             className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"
           />
-          <h2 className="lg:text-[20px] text-[15px] font-semibold">GOATCLOUDS technologies</h2>
+          <NavLink to="/" className="lg:text-[20px] text-[15px] font-semibold">
+            GOATCLOUDS technologies
+          </NavLink>
         </div>
 
         <div className="space-x-10 text-[15px] lg:block hidden">
-          <span>About Us</span>
+          <NavLink to="/about">About Us</NavLink>
           <span>Our Team</span>
           <span>Services</span>
           <span>Our Portfolio</span>
