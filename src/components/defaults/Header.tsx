@@ -27,7 +27,7 @@ const Header: FC<HeaderProps> = ({ active }) => {
 
         <div className="space-x-10 text-[15px] lg:block hidden">
           <NavLink to="/about">About Us</NavLink>
-          <span>Our Team</span>
+          <NavLink to="/team">Our Team</NavLink>
           <span>Services</span>
           <span>Our Portfolio</span>
           <span>Blog</span>
