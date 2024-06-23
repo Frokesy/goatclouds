@@ -1,5 +1,6 @@
 import Container from "../../components/defaults/Container"
 import Hero from "../../components/sections/about/Hero"
+import SectionThree from "../../components/sections/about/SectionThree"
 import SectionTwo from "../../components/sections/about/SectionTwo"
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
     <Container active="about">
         <Hero />
         <SectionTwo />
+        <SectionThree />
     </Container>
   )
 }
