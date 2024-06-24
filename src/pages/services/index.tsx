@@ -20,10 +20,10 @@ const Services = () => {
               <div className="h-1 w-6 bg-[#3e4784]"></div>
               <p>Services</p>
             </div>
-            <h2 className="lg:text-[48px] text-[36px] font-semibold">
+            <h2 className="lg:text-[48px] text-[32px] font-semibold">
               We Offer Solutions
             </h2>
-            <h2 className="pt-3">
+            <h2 className="pt-3 text-[15px] lg:text-[16px]">
               At Goat Cloud Technologies, we offer a comprehensive range of
               services to help your business thrive in the digital world. Our
               expertise spans across various domains, ensuring that all your

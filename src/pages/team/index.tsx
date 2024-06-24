@@ -64,13 +64,13 @@ const Team = () => {
           Meet our team
         </h2>
 
-        <p className="text-center my-4">
+        <p className="text-center my-4 text-[14px] lg:text-[16px]">
           Meet the creative minds behind Goat Clouds Technologies, where
           innovation and expertise come together to craft <br /> exceptional
           digital experiences.
         </p>
 
-        <div className="grid grid-cols-4 w-[90vw] mx-auto gap-20 mt-[15vh]">
+        <div className="grid lg:grid-cols-4 grid-cols-1 w-[90vw] mx-auto gap-20 mt-[15vh]">
           {items.map(item => (
             <div key={item.id} className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]">
             <img
