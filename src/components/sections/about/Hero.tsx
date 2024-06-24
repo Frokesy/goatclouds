@@ -1,10 +1,10 @@
 const Hero = () => {
   return (
-    <div className="bg-[#121212] py-[15vh] text-[#fff]">
-      <div className="w-[90vw] mx-auto flex justify-between items-center">
-        <div className="w-[45%]">
-          <h2 className="text-[48px] font-semibold mb-6">About Us</h2>
-          <p className="text-[18px]">
+    <div className="bg-[#121212] lg:py-[15vh] py-10 text-[#fff]">
+      <div className="w-[90vw] mx-auto flex lg:flex-row flex-col justify-between items-center">
+        <div className="lg:w-[45%]">
+          <h2 className="lg:text-[48px] text-[32px] font-semibold mb-6">About Us</h2>
+          <p className="lg:text-[18px] text-[15px]">
             Founded on the principles of innovation and excellence, Goat Cloud
             Technologies is a collective of passionate designers, developers,
             and strategists. We bring a diverse set of skills and a wealth of

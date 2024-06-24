@@ -12,7 +12,7 @@ const Drawer = () => {
             animate={{ x: 0 }}
             transition={{ type: "ease", stiffness: 60 }}
           >
-            <NavLink to={"/"}>About Us</NavLink>
+            <NavLink to="/about">About Us</NavLink>
             <NavLink to="/team">Our Team</NavLink>
             <NavLink to="/services">Services</NavLink>
             <NavLink to="/">Our Portfolio</NavLink>

@@ -47,22 +47,27 @@ const SectionTwo = () => {
     },
   ];
   return (
-    <div className="w-[90vw] mx-auto my-[15vh]">
+    <div className="w-[90vw] mx-auto lg:my-[15vh] my-10">
       <div className="text-[15px] flex items-center justify-center space-x-3">
         <div className="h-1 w-6 bg-[#3e4784]"></div>
         <p>Why choose us</p>
       </div>
-      <h2 className="lg:text-[48px] text-[36px] font-semibold text-center">
+      <h2 className="lg:text-[48px] text-[32px] font-semibold text-center">
         What we <span className="text-[#3e4784]">Offer</span> that <br />{" "}
         <span className="text-[#3e4784]">Stands</span> out
       </h2>
-      <p className="text-center text-[#121212] my-4">
+      <p className="text-center text-[#121212] my-4 text-[16px] lg:block hidden">
         Choose Goat Cloud Technologies for your project and experience the
         perfect blend of creativity, innovation, and <br /> professionalism.
         Let's elevate your digital presence together.
       </p>
+      <p className="text-center text-[#121212] my-4 text-[14px] block lg:hidden">
+        Choose Goat Cloud Technologies for your project and experience the
+        perfect blend of creativity, innovation, and professionalism.
+        Let's elevate your digital presence together.
+      </p>
 
-      <div className="mt-10 grid grid-cols-3 gap-14">
+      <div className="mt-10 grid lg:grid-cols-3 grid-cols-1 gap-14">
         {items.map(item => (
             <div key={item.id} className="flex flex-col items-center space-y-3">
                 <div>{item.icon}</div>
