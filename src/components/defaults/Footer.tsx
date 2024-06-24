@@ -2,7 +2,7 @@ import { Facebook, GitHub, Instagram, Twitter, UserIcon } from "../icons/icons";
 
 const Footer = () => {
   return (
-    <div className="bg-[#121212] text-[#fff] py-[15vh]">
+    <div className="bg-[#000] text-[#fff] py-[15vh]">
       <div className="w-[90vw] mx-auto">
         <div className="flex lg:flex-row flex-col justify-between">
           <h2 className="text-[24px] lg:w-[320px] font-semibold">
