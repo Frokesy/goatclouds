@@ -85,16 +85,16 @@ const ServiceItems = () => {
       {items.map((item) => (
         <div
           className={`flex justify-between items-center mt-[15vh] ${
-            item.id % 2 === 0 ? "flex-row-reverse" : "flex-row"
+            item.id % 2 === 0 ? "lg:flex-row-reverse flex-col" : "lg:flex-row flex-col"
           }`}
           key={item.id}
         >
-          <div className="w-[30%]">
+          <div className="lg:w-[30%]">
             <img src={item.img} alt="img" className="w-[100%] h-[304px]" />
           </div>
 
-          <div className="w-[45%] space-y-6">
-            <h2 className="text-[40px] font-semibold">{item.header}</h2>
+          <div className="lg:w-[45%] space-y-6">
+            <h2 className="lg:text-[40px] text-[30px] lg:mt-0 mt-4 font-semibold">{item.header}</h2>
             <p>{item.body}</p>
 
             <div className="space-y-3 text-[15px]">

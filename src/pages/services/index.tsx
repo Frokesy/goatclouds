@@ -13,9 +13,9 @@ import ServiceItems from "../../components/sections/services/ServiceItems";
 const Services = () => {
   return (
     <Container active="services">
-      <div className="bg-[#121212] pt-[15vh] text-[#fff]">
-        <div className="w-[90vw] mx-auto flex justify-between items-center">
-          <div className="w-[45%]">
+      <div className="bg-[#121212] lg:pt-[15vh] pt-10 text-[#fff]">
+        <div className="w-[90vw] mx-auto lg:flex-row flex-col flex justify-between items-center">
+          <div className="lg:w-[45%]">
             <div className="text-[15px] flex items-center space-x-3">
               <div className="h-1 w-6 bg-[#3e4784]"></div>
               <p>Services</p>
@@ -59,7 +59,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="w-[50%]">
+          <div className="lg:w-[50%] mt-10 lg:mt-0">
             <img src="/assets/services/img_five.png" alt="img" />
           </div>
         </div>
