@@ -5,6 +5,7 @@ import About from "./pages/about";
 import Team from "./pages/team";
 import Services from "./pages/services";
 import Portfolio from "./pages/portfolio";
+import Blog from "./pages/blog";
 
 function App() {
   const router = createBrowserRouter([
@@ -12,7 +13,8 @@ function App() {
     { path: "/about", element: <About /> },
     { path: "/team", element: <Team /> },
     { path: "/services", element: <Services /> },
-    { path: "/portfolio", element: <Portfolio /> }
+    { path: "/portfolio", element: <Portfolio /> },
+    { path: "/blog", element: <Blog /> }
   ]);
 
   return (
