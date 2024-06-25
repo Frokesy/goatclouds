@@ -31,9 +31,9 @@ const Header: FC<HeaderProps> = ({ active }) => {
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/portfolio">Our Portfolio</NavLink>
           <NavLink to="/blog">Blog</NavLink>
-          <button className="bg-[#3e4784] py-2 px-4 rounded-lg">
+          <NavLink to="/contact" className="bg-[#3e4784] py-2 px-4 rounded-lg">
             Contact us
-          </button>
+          </NavLink>
         </div>
 
         <div className="block lg:hidden z-[100]">

@@ -1,7 +1,7 @@
 import { ArrowLeftBlack, ArrowRightBlack } from "../../icons/icons";
 
 const Paginator = () => {
-  const numbers = [1, 2, 3, "...", 4, 5, 6, 7, 8, 9, 10];
+  const numbers = [1, 2, 3, "...", 8, 9, 10];
   return (
     <div className="w-[90vw] mx-auto flex justify-between items-center my-20">
       <button className="bg-[#fff] text-[#121212] flex items-center space-x-2 lg:px-4 lg:py-2 p-2 rounded-lg">
