@@ -21,7 +21,7 @@ const Header: FC<HeaderProps> = ({ active }) => {
             className="lg:w-[48px] lg:h-[48px] w-[36px] h-[36px]"
           />
           <NavLink to="/" className="lg:text-[20px] text-[15px] font-semibold">
-            GOATCLOUDS technologies
+            GOATCLOUDS Technologies
           </NavLink>
         </div>
 
