@@ -1,6 +1,7 @@
 import Container from "../../components/defaults/Container";
 import { ArrowRight, Search } from "../../components/icons/icons";
 import BlogItems from "../../components/sections/blog/BlogItems";
+import Paginator from "../../components/sections/blog/Paginator";
 import BottomSection from "../../components/sections/services/BottomSection";
 
 const Blog = () => {
@@ -108,6 +109,7 @@ const Blog = () => {
           </div>
         </div>
         <BlogItems />
+        <Paginator />
         <BottomSection />
 
         <div className="bg-[#fff] pt-4 pb-10">
