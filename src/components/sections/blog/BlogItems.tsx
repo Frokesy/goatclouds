@@ -48,7 +48,7 @@ const BlogItems = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 w-[90vw] mx-auto gap-20 mt-20">
+    <div className="grid lg:grid-cols-2 grid-cols-1 w-[90vw] mx-auto gap-20 mt-20">
       {items.map((item) => (
         <div key={item.id} className="space-y-6">
           <img src={item.img} alt="img" className="w-[100%]" />
@@ -60,9 +60,9 @@ const BlogItems = () => {
             </div>
           </div>
 
-          <h2 className="text-[24px] font-semibold">{item.title}</h2>
+          <h2 className="lg:text-[24px] text-[20px] font-semibold">{item.title}</h2>
 
-          <p>{item.excerpt}</p>
+          <p className="lg:text-[16px] text-[14px]">{item.excerpt}</p>
 
           <p className="text-[#3e4784]">[Read More]</p>
 
