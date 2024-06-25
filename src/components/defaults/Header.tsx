@@ -29,7 +29,7 @@ const Header: FC<HeaderProps> = ({ active }) => {
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/team">Our Team</NavLink>
           <NavLink to="/services">Services</NavLink>
-          <span>Our Portfolio</span>
+          <NavLink to="/portfolio">Our Portfolio</NavLink>
           <span>Blog</span>
           <button className="bg-[#3e4784] py-2 px-4 rounded-lg">
             Contact us

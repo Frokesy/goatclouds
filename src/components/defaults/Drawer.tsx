@@ -15,8 +15,8 @@ const Drawer = () => {
             <NavLink to="/about">About Us</NavLink>
             <NavLink to="/team">Our Team</NavLink>
             <NavLink to="/services">Services</NavLink>
-            <NavLink to="/">Our Portfolio</NavLink>
-            <NavLink to="/">Blog</NavLink>
+            <NavLink to="/portfolio">Our Portfolio</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
             <div className="flex">
               <button className="bg-[#3e4784] text-[#fff] py-2 px-6 rounded-lg">
                 Contact us
