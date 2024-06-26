@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Container from "../../components/defaults/Container";
 import BottomSection from "../../components/sections/services/BottomSection";
 
@@ -89,11 +90,15 @@ const Portfolio = () => {
 
         <div className="w-[90vw] mx-auto grid grid-cols-2 gap-10 mt-20">
           {items.map((item) => (
-            <div key={item.id} className="space-y-2">
+            <NavLink
+              to={`/portfolio/${item.id}`}
+              key={item.id}
+              className="space-y-2"
+            >
               <img src={item.img} alt="po_img" />
               <h2 className="lg:text-[20px] font-semibold">{item.name}</h2>
               <p className="text-[13px]">{item.type}</p>
-            </div>
+            </NavLink>
           ))}
         </div>
         <BottomSection />

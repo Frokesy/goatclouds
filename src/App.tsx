@@ -7,6 +7,7 @@ import Services from "./pages/services";
 import Portfolio from "./pages/portfolio";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
+import Slug from "./pages/portfolio/Slug";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,6 +16,7 @@ function App() {
     { path: "/team", element: <Team /> },
     { path: "/services", element: <Services /> },
     { path: "/portfolio", element: <Portfolio /> },
+    { path: "/portfolio/:portfolio_id", element: <Slug /> },
     { path: "/blog", element: <Blog /> },
     { path: "/contact", element: <Contact /> }
   ]);
