@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Container from "../../components/defaults/Container";
 import { Brand } from "../../components/icons/icons";
+import BottomSection from "../../components/sections/services/BottomSection";
 
 const Slug = () => {
   const { portfolio_id } = useParams();
@@ -79,22 +80,22 @@ const Slug = () => {
 
   return (
     <Container active="portfolio">
-      <div className="bg-[#121212] text-[#fff] pt-[10vh]">
+      <div className="bg-[#121212] text-[#fff] lg:pt-[10vh] pt-4">
         <div className="w-[90vw] mx-auto">
-          <h2 className="text-[48px] font-semibold py-6">GT-Tech Exchange</h2>
+          <h2 className="lg:text-[48px] text-[32px] font-semibold py-6">GT-Tech Exchange</h2>
           <img
             src="/assets/portfolio/po_three.png"
             alt="po_img"
-            className="w-[100%] h-[588px]"
+            className="w-[100%] lg:h-[588px]"
           />
 
-          <h2 className="text-[48px] font-semibold mt-10 pb-4">
+          <h2 className="lg:text-[48px] text-[32px] font-semibold mt-10 pb-4">
             Product Information
           </h2>
-          <div className="flex justify-between">
+          <div className="flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
             <div className="w-[65%] space-y-3">
-              <h2 className="text-[24px] font-semibold">About</h2>
-              <p className="text-[16px]">
+              <h2 className="lg:text-[24px] text-[20px] font-semibold">About</h2>
+              <p className="lg:text-[16px] text-[14px]">
                 GT Tech Exchange is a user-friendly fintech app designed to
                 streamline your financial activities and gadget purchases within
                 the GT Tech community.
@@ -124,8 +125,8 @@ const Slug = () => {
             </div>
           </div>
 
-          <h2 className="text-[48px] font-semibold py-6">Work Delivered</h2>
-          <div className="grid grid-cols-3 gap-20">
+          <h2 className="lg:text-[48px] text-[32px] font-semibold py-6">Work Delivered</h2>
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-20">
             {workItems.map((workItem) => (
               <div
                 key={workItem.id}
@@ -138,8 +139,8 @@ const Slug = () => {
             ))}
           </div>
 
-          <h2 className="text-[48px] font-semibold py-6 mt-[10vh]">Features</h2>
-          <div className="grid grid-cols-3 gap-20">
+          <h2 className="lg:text-[48px] text-[32px] font-semibold py-6 mt-[10vh]">Features</h2>
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-20">
             {featureList.map((featureItem) => (
               <div
                 key={featureItem.id}
@@ -155,6 +156,22 @@ const Slug = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <BottomSection />
+
+        <div className="bg-[#fff] pt-4 pb-10">
+          <h2 className="text-center text-[#121212] my-6">
+            Trusted by companies
+          </h2>
+          <div className="w-[90vw] mx-auto overflow-x-auto grid lg:grid-cols-6 grid-cols-2 gap-y-10">
+            <img src="/assets/logos/canva.png" alt="canva" />
+            <img src="/assets/logos/notion.png" alt="notion" />
+            <img src="/assets/logos/slack.png" alt="slack" />
+            <img src="/assets/logos/dropbox.png" alt="dropbox" />
+            <img src="/assets/logos/github.png" alt="github" />
+            <img src="/assets/logos/youtube.png" alt="youtube" />
           </div>
         </div>
       </div>
