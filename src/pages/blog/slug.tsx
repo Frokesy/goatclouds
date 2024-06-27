@@ -12,10 +12,10 @@ const BlogSlug = () => {
       <div className="bg-[#121212] text-[#fff] pt-[10vh]">
         <div className="flex flex-col justify-center items-center text-center space-y-6">
           <p className="text-[#3e4784]">Published 19 Jan 2024</p>
-          <h2 className="text-[48px] font-semibold">
+          <h2 className="lg:text-[48px] text-[36px] font-semibold">
             The Future of Web Design: Trends to <br /> Watch in 2024
           </h2>
-          <p className="w-[50%] text-[#808080]">
+          <p className="lg:w-[50%] px-6 lg:px-0 text-[#808080]">
             Stay ahead of the curve with the latest web design trends. From
             AI-driven design tools to immersive user experiences, discover
             what&apos;s shaping the future of web design and how you can
@@ -38,9 +38,11 @@ const BlogSlug = () => {
           />
         </div>
 
-        <div className="w-[50%] mx-auto">
+        <div className="lg:w-[50%] w-[90%] mx-auto">
           <div className="border-b border-[#ccc] pt-[10vh]"></div>
-          <h2 className="pt-10 text-[30px] font-semibold">Introduction</h2>
+          <h2 className="pt-10 lg:text-[30px] text-[24px] font-semibold">
+            Introduction
+          </h2>
           <p className="mt-4">
             The world of web design is continually evolving, with new
             technologies and trends emerging to shape how we interact with
@@ -59,7 +61,7 @@ const BlogSlug = () => {
           />
 
           <div className="border-l-4 border-[#3e4784] px-6 space-y-4">
-            <h2 className="text-[24px] font-semibold italic text-[#ccc]">
+            <h2 className="lg:text-[24px] text-[20px] font-semibold italic text-[#ccc]">
               “In a world older and more complete than ours they move finished
               and complete, gifted with extensions of the senses we have lost or
               never attained, living by voices we shall never hear.”
@@ -68,7 +70,7 @@ const BlogSlug = () => {
             <p>— Phoenix Baker, Product Designer</p>
           </div>
 
-          <h2 className="pt-10 text-[30px] font-semibold">
+          <h2 className="pt-10 lg:text-[30px] text-[24px] font-semibold">
             AI-Driven Design Tools
           </h2>
           <p className="mt-4">
@@ -95,7 +97,7 @@ const BlogSlug = () => {
             </li>
           </ol>
 
-          <h2 className="pt-10 text-[30px] font-semibold">
+          <h2 className="pt-10 lg:text-[30px] text-[24px] font-semibold">
             Immersive User Experience
           </h2>
           <p className="mt-4">
@@ -129,7 +131,7 @@ const BlogSlug = () => {
             className="py-20 w-[100%]"
           />
 
-          <h2 className="pt-10 text-[30px] font-semibold">
+          <h2 className="pt-10 lg:text-[30px] text-[24px] font-semibold">
             Minimalist Design with Bold Typography
           </h2>
           <p className="mt-4">
@@ -153,7 +155,7 @@ const BlogSlug = () => {
             </li>
           </ol>
 
-          <div className="bg-[#fff] text-[#808080] p-6 rounded-xl mt-20">
+          <div className="bg-[#fff] text-[#808080] lg:p-6 p-4 rounded-xl mt-20">
             <h2 className="text-[24px] font-semibold text-[#121212]">
               Leveraging These Trends
             </h2>
@@ -188,7 +190,7 @@ const BlogSlug = () => {
           </div>
 
           <div className="border-b border-[#808080] pt-[10vh]"></div>
-          <div className="flex justify-between items-center mt-6 pb-[15vh]">
+          <div className="flex lg:flex-row flex-col justify-between lg:items-center space-y-10 lg:space-y-0 mt-6 pb-10 lg:pb-[15vh]">
             <div className="flex space-x-4">
               <p className="bg-[#fff] px-3 py-1 text-[#3d8eb9] rounded-full">
                 Web Development
@@ -220,15 +222,17 @@ const BlogSlug = () => {
         </div>
 
         <div className="w-[90vw] mx-auto py-[10vh]">
-          <h2 className="text-[36px] font-semibold">View more posts</h2>
-          <p className="text-[20px] mt-2">
+          <h2 className="lg:text-[36px] text-[24px] font-semibold">
+            View more posts
+          </h2>
+          <p className="lg:text-[20px] mt-2">
             The latest industry news, interviews, technologies, and resources.
           </p>
 
-          <div className="mt-[10vh] flex justify-between space-x-10">
-            <div className="flex justify-between w-[45%]">
-              <div className="relative w-[320px]">
-                <img src="/assets/blog/bl_two.png" alt="img" />
+          <div className="mt-[10vh] flex lg:flex-row flex-col justify-between lg:space-x-10">
+            <div className="flex lg:flex-row flex-col justify-between lg:w-[45%]">
+              <div className="relative lg:w-[320px]">
+                <img src="/assets/blog/bl_two.png" alt="img" className="w-[100%]" />
                 <div className="absolute flex justify-between bg-[#fff] w-[100%] bottom-0 bg-opacity-30 space-y-4 backdrop-blur-sm py-4 px-3">
                   <div className="flex flex-col">
                     <p>Olivia Rhye</p>
@@ -238,7 +242,7 @@ const BlogSlug = () => {
                 </div>
               </div>
 
-              <div className="w-[50%] space-y-4">
+              <div className="lg:w-[50%] space-y-4 lg:mt-0 mt-10">
                 <h2 className="text-[18px] font-semibold">
                   How to Create a Responsive Website Design
                 </h2>
@@ -252,8 +256,8 @@ const BlogSlug = () => {
               </div>
             </div>
 
-            <div className="flex justify-between w-[45%]">
-              <div className="relative w-[320px]">
+            <div className="flex lg:flex-row flex-col justify-between lg:w-[45%] lg:mt-0 mt-10">
+              <div className="relative lg:w-[320px]">
                 <img src="/assets/blog/bl_three.png" alt="img" />
                 <div className="absolute flex justify-between bg-[#fff] w-[100%] bottom-0 bg-opacity-30 space-y-4 backdrop-blur-sm py-4 px-3">
                   <div className="flex flex-col">
@@ -264,7 +268,7 @@ const BlogSlug = () => {
                 </div>
               </div>
 
-              <div className="w-[50%] space-y-4">
+              <div className="lg:w-[50%] space-y-4 lg:mt-0 mt-10">
                 <h2 className="text-[18px] font-semibold">
                   Effective Content Strategies for Your Website
                 </h2>
