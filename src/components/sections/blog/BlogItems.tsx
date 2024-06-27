@@ -1,4 +1,5 @@
 import { ArrowRight } from "../../icons/icons";
+import { NavLink } from "react-router-dom";
 
 const BlogItems = () => {
   const items = [
@@ -60,7 +61,12 @@ const BlogItems = () => {
             </div>
           </div>
 
-          <h2 className="lg:text-[24px] text-[20px] font-semibold">{item.title}</h2>
+          <NavLink
+            to={`/blog/${item.id}`}
+            className="lg:text-[24px] text-[20px] font-semibold"
+          >
+            {item.title}
+          </NavLink>
 
           <p className="lg:text-[16px] text-[14px]">{item.excerpt}</p>
 

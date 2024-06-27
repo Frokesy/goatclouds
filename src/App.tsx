@@ -8,6 +8,7 @@ import Portfolio from "./pages/portfolio";
 import Blog from "./pages/blog";
 import Contact from "./pages/contact";
 import Slug from "./pages/portfolio/Slug";
+import BlogSlug from "./pages/blog/slug";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,7 @@ function App() {
     { path: "/portfolio", element: <Portfolio /> },
     { path: "/portfolio/:portfolio_id", element: <Slug /> },
     { path: "/blog", element: <Blog /> },
+    { path: "/blog/:blog_id", element: <BlogSlug /> },
     { path: "/contact", element: <Contact /> }
   ]);
 

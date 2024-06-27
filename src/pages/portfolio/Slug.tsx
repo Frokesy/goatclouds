@@ -93,7 +93,7 @@ const Slug = () => {
             Product Information
           </h2>
           <div className="flex lg:flex-row flex-col space-y-10 lg:space-y-0 justify-between">
-            <div className="w-[65%] space-y-3">
+            <div className="lg:w-[65%] space-y-3">
               <h2 className="lg:text-[24px] text-[20px] font-semibold">About</h2>
               <p className="lg:text-[16px] text-[14px]">
                 GT Tech Exchange is a user-friendly fintech app designed to
@@ -101,26 +101,26 @@ const Slug = () => {
                 the GT Tech community.
               </p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 lg:text-[16px] text-[14px]">
               <div className="flex items-center">
                 <h3 className="font-semibold">Project Brand: </h3>
-                <p>GT-Tech Exchange</p>
+                <p>{" "} GT-Tech Exchange</p>
               </div>
               <div className="flex items-center">
                 <h3 className="font-semibold">Client: </h3>
-                <p>GT-Tech Exchange</p>
+                <p>{" "} GT-Tech Exchange</p>
               </div>
               <div className="flex items-center">
                 <h3 className="font-semibold">Year: </h3>
-                <p>2024</p>
+                <p>{" "} 2024</p>
               </div>
               <div className="flex items-center">
                 <h3 className="font-semibold">Industry: </h3>
-                <p>FinTech</p>
+                <p>{" "} FinTech</p>
               </div>
               <div className="flex items-center">
                 <h3 className="font-semibold">Location: </h3>
-                <p>Nigeria</p>
+                <p>{" "} Nigeria</p>
               </div>
             </div>
           </div>
