@@ -9,6 +9,7 @@ const BlogItems = () => {
       title: "How to Create a Responsive Website Design",
       excerpt:
         "Responsive design is essential for today’s multi-device world. Learn the best practices for creating websites that look and perform great on all screen sizes.",
+      duration: 1000,
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ const BlogItems = () => {
       title: "Boost Your Online Presence: Effective SEO Strategies for 2024",
       excerpt:
         "Learn the most effective SEO strategies to enhance your website’s visibility and drive organic traffic. Our experts share insights on keyword research, on-page SEO, and the latest algorithm updates.",
+      duration: 1500,
     },
     {
       id: 3,
@@ -23,6 +25,7 @@ const BlogItems = () => {
       title: "The Future of Web Design: Trends to Watch in 2024",
       excerpt:
         "Learn the most effective SEO strategies to enhance your website’s visibility and drive organic traffic. Our experts share insights on keyword research, on-page SEO, and the latest algorithm updates.",
+      duration: 1000,
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ const BlogItems = () => {
       title: "The Future of Web Design: Trends to Watch in 2024",
       excerpt:
         "Learn the most effective SEO strategies to enhance your website’s visibility and drive organic traffic. Our experts share insights on keyword research, on-page SEO, and the latest algorithm updates.",
+      duration: 1500,
     },
     {
       id: 5,
@@ -38,6 +42,7 @@ const BlogItems = () => {
         "Mobile App Development: Choosing Between Native and Cross-Platform",
       excerpt:
         "Deciding between native and cross-platform app development can be challenging. This post explores the pros and cons of each approach, helping you make an informed decision for your next mobile project.",
+      duration: 1000,
     },
     {
       id: 6,
@@ -45,13 +50,20 @@ const BlogItems = () => {
       title: "The Future of Web Design: Trends to Watch in 2024",
       excerpt:
         "Learn the most effective SEO strategies to enhance your website’s visibility and drive organic traffic. Our experts share insights on keyword research, on-page SEO, and the latest algorithm updates.",
+      duration: 1500,
     },
   ];
 
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 w-[90vw] mx-auto gap-20 mt-20">
       {items.map((item) => (
-        <div key={item.id} className="space-y-6">
+        <div
+          data-aos="fade-up"
+          data-aos-duration={item.duration}
+          data-aos-offset="200"
+          key={item.id}
+          className="space-y-6"
+        >
           <img src={item.img} alt="img" className="w-[100%]" />
           <div className="flex space-x-6 text-[12px]">
             <p className="text-[#808080]">Design</p>
