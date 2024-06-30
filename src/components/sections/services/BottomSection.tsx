@@ -1,6 +1,15 @@
 import { Email, Location, Phone } from "../../icons/serviceIcons";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BottomSection = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+
   return (
     <div className="lg:w-[90vw] mx-auto mt-[10vh]">
       <div className="bg-[url('/assets/services/img_four.png')] bg-no-repeat bg-cover relative lg:min-h-[70vh] min-h-[150vh] text-[#fff] lg:rounded-t-2xl">
@@ -15,7 +24,12 @@ const BottomSection = () => {
           </h2>
 
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-20 gap-10">
-            <div className="bg-[#ccc] bg-opacity-50 rounded-xl backdrop-blur-xl p-6 space-y-4">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-offset="200"
+              className="bg-[#ccc] bg-opacity-50 rounded-xl backdrop-blur-xl p-6 space-y-4"
+            >
               <Email />
               <h2 className="text-[18px] font-semibold">Message Us</h2>
               <p className="pb-3">Speak to our friendly team</p>
@@ -24,14 +38,24 @@ const BottomSection = () => {
               </a>
             </div>
 
-            <div className="bg-[#ccc] bg-opacity-50 rounded-xl backdrop-blur-xl p-6 space-y-4">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="750"
+              data-aos-offset="200"
+              className="bg-[#ccc] bg-opacity-50 rounded-xl backdrop-blur-xl p-6 space-y-4"
+            >
               <Location />
               <h2 className="text-[18px] font-semibold">Visit Us</h2>
               <p>Visit our office HQ</p>
               <p>100 Smith Street Collingwood VIC 3066 AU</p>
             </div>
 
-            <div className="bg-[#ccc] bg-opacity-50 rounded-xl backdrop-blur-xl p-6 space-y-4">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              className="bg-[#ccc] bg-opacity-50 rounded-xl backdrop-blur-xl p-6 space-y-4"
+            >
               <Phone />
               <h2 className="text-[18px] font-semibold">Call Us</h2>
               <p className="pb-3">Mon-Fri from 8am to 5pm</p>
