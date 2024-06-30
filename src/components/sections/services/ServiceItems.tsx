@@ -85,22 +85,42 @@ const ServiceItems = () => {
       {items.map((item) => (
         <div
           className={`flex justify-between items-center mt-[15vh] ${
-            item.id % 2 === 0 ? "lg:flex-row-reverse flex-col" : "lg:flex-row flex-col"
+            item.id % 2 === 0
+              ? "lg:flex-row-reverse flex-col"
+              : "lg:flex-row flex-col"
           }`}
           key={item.id}
         >
-          <div className="lg:w-[30%]">
+          <div
+            className="lg:w-[30%]"
+            data-aos={item.id % 2 === 0 ? "fade-left" : "fade-right"}
+            data-aos-duration="1500"
+            data-aos-offset="200"
+          >
             <img src={item.img} alt="img" className="w-[100%] h-[304px]" />
           </div>
 
           <div className="lg:w-[45%] space-y-6">
-            <h2 className="lg:text-[40px] text-[30px] lg:mt-0 mt-4 font-semibold">{item.header}</h2>
-            <p>{item.body}</p>
+            <h2
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+              className="lg:text-[40px] text-[30px] lg:mt-0 mt-4 font-semibold"
+            >
+              {item.header}
+            </h2>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+            >
+              <p>{item.body}</p>
 
-            <div className="space-y-3 text-[15px]">
-              {item.listItems.map((listItem) => (
-                <p key={listItem}>{listItem}</p>
-              ))}
+              <div className="space-y-3 text-[15px]">
+                {item.listItems.map((listItem) => (
+                  <p key={listItem}>{listItem}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
