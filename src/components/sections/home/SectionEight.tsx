@@ -1,19 +1,49 @@
+import { useEffect } from "react";
 import { ArrowTopDiagonalBlack } from "../../icons/icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const SectionEight = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div className="w-[90vw] mx-auto py-[15vh]">
       <div className="flex lg:flex-row flex-col items-center lg:space-x-10">
-        <img src="/assets/blog/Image.png" alt="img" className="w-full lg:w-auto" />
+        <img
+          src="/assets/blog/Image.png"
+          alt="img"
+          className="w-full lg:w-auto"
+        />
         <div className="lg:mt-0 mt-10">
-          <div className="text-[15px] flex items-center space-x-3">
-            <div className="h-0.5 w-6 bg-[#3e4784]"></div>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            className="text-[15px] flex items-center space-x-3"
+          >
+            <div className="h-0.5 w-6 bg-[#8b95d2]"></div>
             <p>Our Blog</p>
           </div>
-          <h2 className="lg:text-[48px] text-[36px] font-semibold">Latest Writings</h2>
-          <p>The latest news, technologies, and resources from our team</p>
+          <h2
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-offset="200"
+            className="lg:text-[48px] text-[36px] font-semibold"
+          >
+            Latest Writings
+          </h2>
+          <p data-aos="zoom-in" data-aos-duration="1500" data-aos-offset="200">
+            The latest news, technologies, and resources from our team
+          </p>
 
-          <button className="bg-[#3e4784] text-[#fff] py-2 px-4 rounded-lg my-6">
+          <button
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-offset="200"
+            className="bg-[#3e4784] text-[#fff] py-2 px-4 rounded-lg my-6"
+          >
             View more
           </button>
         </div>
@@ -49,12 +79,14 @@ const SectionEight = () => {
               Alec Whitten • 17 Jan 2022
             </p>
             <div className="flex justify-between items-center">
-              <h2 className="text-[24px] font-semibold">Bill Walsh leadership</h2>
+              <h2 className="text-[24px] font-semibold">
+                Bill Walsh leadership
+              </h2>
               <ArrowTopDiagonalBlack />
             </div>
             <p className="text-[#404040] text-[15px]">
-              Like to know the secrets of transforming a 2-14 team into a 3x Super
-              Bowl winning Dynasty?
+              Like to know the secrets of transforming a 2-14 team into a 3x
+              Super Bowl winning Dynasty?
             </p>
 
             <div className="w-full flex flex-wrap justify-between">

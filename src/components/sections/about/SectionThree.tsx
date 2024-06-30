@@ -9,12 +9,48 @@ const SectionThree = () => {
           </div>
 
           <div className="grid grid-cols-2 lg:text-[40px] text-[13px] font-semibold gap-y-6 mt-6">
-            <p>Digital Product Design</p>
-            <p>Branding and Design Services</p>
-            <p>Advertising and Marketing</p>
-            <p>Web Development and Consulting</p>
-            <p>UI/UX Experience Design</p>
-            <p>Mobile App Development</p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+            >
+              Digital Product Design
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="200"
+            >
+              Branding and Design Services
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="200"
+            >
+              Advertising and Marketing
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-offset="200"
+            >
+              Web Development and Consulting
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="200"
+            >
+              UI/UX Experience Design
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-offset="200"
+            >
+              Mobile App Development
+            </p>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ interface ContainerProps {
 }
 const Container: FC<ContainerProps> = ({ children, active }) => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header active={active} />
       <PageTransition>{children}</PageTransition>
       <Footer />

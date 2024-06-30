@@ -1,6 +1,7 @@
 import { ArrowTopDiagonal } from "../../icons/icons";
 
 const SectionThree = () => {
+
   return (
     <div className="bg-[#121212] text-[#fff] py-[10vh]">
       <div className="text-[15px] flex items-center justify-center space-x-3">
