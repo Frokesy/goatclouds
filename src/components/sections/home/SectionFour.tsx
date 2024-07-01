@@ -22,8 +22,8 @@ const SectionFour = () => {
       </h2>
 
       <div className="W-[100%] overflow-hidden">
-      <div className="flex items-center scroll-animation">
-          <div className="flex items-center space-x-10 lg:space-x-[15vw] mt-14">
+      <div className="flex items-center scroll-animation-2">
+          <div className="flex items-center space-x-10 lg:space-x-20 mt-14">
             <div className="space-y-3 lg:w-auto w-[90vw]">
               <img src="/assets/services/img_one.png" alt="img" />
               <h2>Digital Product Design</h2>
@@ -35,6 +35,10 @@ const SectionFour = () => {
             <div className="space-y-3 lg:w-auto w-[90vw]">
               <img src="/assets/services/img_three.png" alt="img" />
               <h2>Advertising and Marketing</h2>
+            </div>
+            <div className="space-y-3 lg:w-auto w-[90vw]">
+              <img src="/assets/services/img_one.png" alt="img" />
+              <h2>Digital Product Design</h2>
             </div>
           </div>
         </div>

@@ -78,7 +78,7 @@ const Hero = () => {
           <img
             src="/assets/hero/hero_line_pattern.png"
             alt="linePattern"
-            className="z-20 lg:relative absolute lg:top-20 top-[5vh]"
+            className="z-20 lg:relative absolute lg:top-0 top-[5vh]"
           />
         </motion.div>
       </div>

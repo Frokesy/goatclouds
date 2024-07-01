@@ -1,4 +1,11 @@
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
 const SectionFive = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <div className="bg-[#121212] py-[15vh] text-[#fff]">
       <div className="w-[90vw] mx-auto flex lg:flex-row flex-col justify-between items-center">
@@ -25,12 +32,25 @@ const SectionFive = () => {
           </div>
           <div className="grid grid-cols-2 gap-20 lg:pr-[15vw]">
             <div
+              ref={ref}
               data-aos="fade-up"
               data-aos-duration="2000"
               data-aos-offset="200"
               className="flex flex-col items-center space-y-2"
             >
-              <h2 className="lg:text-[60px] text-[30px] font-semibold">200%</h2>
+              <h2 className="lg:text-[60px] text-[30px] font-semibold">
+                {inView ? (
+                  <CountUp
+                    start={0}
+                    end={200}
+                    duration={2}
+                    suffix="%"
+                    delay={0.5}
+                  />
+                ) : (
+                  0
+                )}
+              </h2>
               <p className="text-center">Team growth in 12 months</p>
             </div>
             <div
@@ -39,7 +59,19 @@ const SectionFive = () => {
               data-aos-offset="200"
               className="flex flex-col items-center space-y-2"
             >
-              <h2 className="lg:text-[60px] text-[30px] font-semibold">24 +</h2>
+              <h2 className="lg:text-[60px] text-[30px] font-semibold">
+                {inView ? (
+                  <CountUp
+                    start={0}
+                    end={24}
+                    duration={2}
+                    suffix="+"
+                    delay={0.5}
+                  />
+                ) : (
+                  0
+                )}
+              </h2>
               <p className="text-center">Team growth in 12 months</p>
             </div>
             <div
@@ -49,7 +81,18 @@ const SectionFive = () => {
               className="flex flex-col items-center space-y-2"
             >
               <h2 className="lg:text-[60px] text-[30px] font-semibold">
-                4.8 +
+                {inView ? (
+                  <CountUp
+                    start={0}
+                    end={4.8}
+                    duration={2}
+                    suffix="+"
+                    delay={0.5}
+                    decimals={1}
+                  />
+                ) : (
+                  0
+                )}
               </h2>
               <p className="text-center">Team growth in 12 months</p>
             </div>
@@ -60,7 +103,17 @@ const SectionFive = () => {
               className="flex flex-col items-center space-y-2"
             >
               <h2 className="lg:text-[60px] text-[30px] font-semibold">
-                280 +
+                {inView ? (
+                  <CountUp
+                    start={0}
+                    end={280}
+                    duration={2}
+                    delay={0.5}
+                    suffix="+"
+                  />
+                ) : (
+                  0
+                )}
               </h2>
               <p className="text-center">Team growth in 12 months</p>
             </div>
