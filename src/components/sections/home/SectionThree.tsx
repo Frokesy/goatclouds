@@ -43,16 +43,16 @@ const SectionThree = () => {
           </NavLink>
         </div>
 
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 lg:w-[50%]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-10 lg:w-[50%]">
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-offset="200"
-            className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]"
+            className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
           >
             <img
               src="/assets/team/fr_one.png"
-              className="w-[100%] lg:h-[220px] h-[280px]"
+              className="w-[100%] lg:h-[220px]"
               alt="img"
             />
             <div className="space-y-2 my-3 px-4">
@@ -64,11 +64,11 @@ const SectionThree = () => {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-offset="200"
-            className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]"
+            className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
           >
             <img
               src="/assets/team/fr_two.png"
-              className="w-[100%] lg:h-[220px] h-[280px]"
+              className="w-[100%] lg:h-[220px]"
               alt="img"
             />
             <div className="space-y-2 my-3 px-4">
@@ -79,16 +79,16 @@ const SectionThree = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-4 grid-cols-1 w-[90vw] mx-auto lg:gap-10 gap-16 mt-14">
+      <div className="grid lg:grid-cols-4 grid-cols-1 w-[90vw] mx-auto lg:gap-10 gap-10 mt-14">
         <div
           data-aos="fade-up"
           data-aos-duration="2000"
           data-aos-offset="200"
-          className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]"
+          className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
         >
           <img
             src="/assets/team/fr_three.png"
-            className="w-[100%] lg:h-[220px] h-[280px]"
+            className="w-[100%] lg:h-[220px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -100,11 +100,11 @@ const SectionThree = () => {
           data-aos="fade-up"
           data-aos-duration="2500"
           data-aos-offset="200"
-          className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]"
+          className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
         >
           <img
             src="/assets/team/fr_four.png"
-            className="w-[100%] lg:h-[220px] h-[280px]"
+            className="w-[100%] lg:h-[220px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -116,11 +116,11 @@ const SectionThree = () => {
           data-aos="fade-up"
           data-aos-duration="3000"
           data-aos-offset="200"
-          className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]"
+          className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
         >
           <img
             src="/assets/team/fr_five.png"
-            className="w-[100%] lg:h-[220px] h-[280px]"
+            className="w-[100%] lg:h-[220px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -132,11 +132,11 @@ const SectionThree = () => {
           data-aos="fade-up"
           data-aos-duration="3500"
           data-aos-offset="200"
-          className="border border-[#808080] rounded-2xl lg:w-[300px] w-[100%]"
+          className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
         >
           <img
             src="/assets/team/fr_six.png"
-            className="w-[100%] lg:h-[220px] h-[280px]"
+            className="w-[100%] lg:h-[220px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">

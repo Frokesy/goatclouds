@@ -58,7 +58,7 @@ const Hero = () => {
           >
             <motion.button
               variants={childVariants}
-              className="flex border border-[#5a5b5d] py-2 px-4 rounded-lg space-x-2"
+              className="flex border border-[#5a5b5d] py-2 px-4 rounded-lg space-x-2 z-40"
             >
               <span>View reel</span>
               <Play />
@@ -66,7 +66,7 @@ const Hero = () => {
             <NavLink to="/contact">
               <motion.button
                 variants={childVariants}
-                className="border border-[#5a5b5d] py-2 px-4 rounded-lg"
+                className="border border-[#5a5b5d] py-2 px-4 rounded-lg z-40"
               >
                 Contact us
               </motion.button>
