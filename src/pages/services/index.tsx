@@ -12,6 +12,7 @@ import ServiceItems from "../../components/sections/services/ServiceItems";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LogoScroll from "../../components/defaults/LogoScroll";
 
 const Services = () => {
   useEffect(() => {
@@ -116,76 +117,8 @@ const Services = () => {
         </div>
         <BottomSection />
 
-        <div className="bg-[#fff] pt-4 pb-10">
-          <h2 className="text-center text-[#121212] my-6">
-            Trusted by companies
-          </h2>
-          <div className="w-[90vw] mx-auto my-10 overflow-hidden">
-            <div className="flex items-center scroll-animation">
-              <div className="flex items-center space-x-10 lg:space-x-20">
-                <img
-                  src="/assets/logos/canva.png"
-                  alt="canva"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/notion.png"
-                  alt="notion"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/slack.png"
-                  alt="slack"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/dropbox.png"
-                  alt="dropbox"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/github.png"
-                  alt="github"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/youtube.png"
-                  alt="youtube"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/canva.png"
-                  alt="canva"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/notion.png"
-                  alt="notion"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/slack.png"
-                  alt="slack"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/dropbox.png"
-                  alt="dropbox"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/github.png"
-                  alt="github"
-                  className="lg:w-[10vw]"
-                />
-                <img
-                  src="/assets/logos/youtube.png"
-                  alt="youtube"
-                  className="lg:w-[10vw]"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="bg-[#fff] pt-8 pb-10 text-[#000]">
+          <LogoScroll />
         </div>
       </div>
     </Container>

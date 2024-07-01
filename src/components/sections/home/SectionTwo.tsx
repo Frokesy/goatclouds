@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { ArrowTopDiagonal } from "../../icons/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LogoScroll from "../../defaults/LogoScroll";
 
 const SectionTwo = () => {
   useEffect(() => {
@@ -9,73 +10,7 @@ const SectionTwo = () => {
   }, []);
   return (
     <div className="lg:mt-[10vh] mt-10">
-      <h2 className="text-center">Trusted by companies</h2>
-      <div className="w-[90vw] mx-auto my-10 overflow-hidden">
-        <div className="flex items-center scroll-animation">
-          <div className="flex items-center space-x-10 lg:space-x-20">
-            <img
-              src="/assets/logos/canva.png"
-              alt="canva"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/notion.png"
-              alt="notion"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/slack.png"
-              alt="slack"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/dropbox.png"
-              alt="dropbox"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/github.png"
-              alt="github"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/youtube.png"
-              alt="youtube"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/canva.png"
-              alt="canva"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/notion.png"
-              alt="notion"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/slack.png"
-              alt="slack"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/dropbox.png"
-              alt="dropbox"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/github.png"
-              alt="github"
-              className="lg:w-[10vw]"
-            />
-            <img
-              src="/assets/logos/youtube.png"
-              alt="youtube"
-              className="lg:w-[10vw]"
-            />
-          </div>
-        </div>
-      </div>
+     <LogoScroll />
 
       <div className="lg:w-[80vw] w-[90vw] mx-auto flex lg:flex-row flex-col lg:my-[10vh] my-10 items-center lg:space-x-10">
         <div
