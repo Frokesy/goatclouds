@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Facebook, GitHub, Instagram, Twitter, UserIcon } from "../icons/icons";
 
 const Footer = () => {
@@ -71,12 +72,20 @@ const Footer = () => {
                   55 Main Street, 2nd block Melbourne, Australia
                 </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 flex flex-col">
                 <h2 className="text-[20px] font-semibold">Quick links</h2>
-                <p className="text-[15px]">About Us</p>
-                <p className="text-[15px]">Our Services</p>
-                <p className="text-[15px]">News & Blog</p>
-                <p className="text-[15px]">Contact Us</p>
+                <NavLink to="/about" className="text-[15px]">
+                  About Us
+                </NavLink>
+                <NavLink to="/services" className="text-[15px]">
+                  Our Services
+                </NavLink>
+                <NavLink to="/blog" className="text-[15px]">
+                  News & Blog
+                </NavLink>
+                <NavLink to="/contact" className="text-[15px]">
+                  Contact Us
+                </NavLink>
               </div>
             </div>
             <div className="lg:mt-[15vh] mt-10 space-x-10 lg:ml-10 flex">

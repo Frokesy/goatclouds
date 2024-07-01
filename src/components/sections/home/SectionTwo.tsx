@@ -3,6 +3,7 @@ import { ArrowTopDiagonal } from "../../icons/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LogoScroll from "../../defaults/LogoScroll";
+import { NavLink } from "react-router-dom";
 
 const SectionTwo = () => {
   useEffect(() => {
@@ -10,7 +11,7 @@ const SectionTwo = () => {
   }, []);
   return (
     <div className="lg:mt-[10vh] mt-10">
-     <LogoScroll />
+      <LogoScroll />
 
       <div className="lg:w-[80vw] w-[90vw] mx-auto flex lg:flex-row flex-col lg:my-[10vh] my-10 items-center lg:space-x-10">
         <div
@@ -49,10 +50,12 @@ const SectionTwo = () => {
               experience to the table, ensuring every project we undertake is
               executed with precision and creativity.
             </p>
-            <button className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[15px] my-6">
-              <p>Learn More</p>
-              <ArrowTopDiagonal />
-            </button>
+            <NavLink to="/about">
+              <button className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[15px] my-6">
+                <p>Learn More</p>
+                <ArrowTopDiagonal />
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>

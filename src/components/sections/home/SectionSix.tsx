@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { ArrowTopDiagonal } from "../../icons/icons";
 
 const SectionSix = () => {
@@ -54,15 +55,17 @@ const SectionSix = () => {
           <p className="text-[13px]">Academics website</p>
         </div>
       </div>
-      <button
-        data-aos="fade-up"
-        data-aos-duration="4500"
-        data-aos-offset="200"
-        className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[16px] my-14"
-      >
-        <p>View more projects</p>
-        <ArrowTopDiagonal />
-      </button>
+      <NavLink to="/portfolio">
+        <button
+          data-aos="fade-up"
+          data-aos-duration="4500"
+          data-aos-offset="200"
+          className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[16px] my-14"
+        >
+          <p>View more projects</p>
+          <ArrowTopDiagonal />
+        </button>
+      </NavLink>
     </div>
   );
 };

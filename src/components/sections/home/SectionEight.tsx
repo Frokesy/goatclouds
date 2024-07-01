@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { ArrowTopDiagonalBlack } from "../../icons/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { NavLink } from "react-router-dom";
 
 const SectionEight = () => {
   useEffect(() => {
@@ -12,6 +12,9 @@ const SectionEight = () => {
     <div className="w-[90vw] mx-auto py-[15vh]">
       <div className="flex lg:flex-row flex-col items-center lg:space-x-10">
         <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-offset="200"
           src="/assets/blog/Image.png"
           alt="img"
           className="w-full lg:w-auto"
@@ -38,14 +41,16 @@ const SectionEight = () => {
             The latest news, technologies, and resources from our team
           </p>
 
-          <button
-            data-aos="zoom-in"
-            data-aos-duration="1500"
-            data-aos-offset="200"
-            className="bg-[#3e4784] text-[#fff] py-2 px-4 rounded-lg my-6"
-          >
-            View more
-          </button>
+          <NavLink to="/blog">
+            <button
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-offset="200"
+              className="bg-[#3e4784] text-[#fff] py-2 px-4 rounded-lg my-6"
+            >
+              View more
+            </button>
+          </NavLink>
         </div>
       </div>
 

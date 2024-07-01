@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Play } from "../../icons/icons";
 import { motion } from "framer-motion";
 
@@ -62,12 +63,14 @@ const Hero = () => {
               <span>View reel</span>
               <Play />
             </motion.button>
-            <motion.button
-              variants={childVariants}
-              className="border border-[#5a5b5d] py-2 px-4 rounded-lg"
-            >
-              Contact us
-            </motion.button>
+            <NavLink to="/contact">
+              <motion.button
+                variants={childVariants}
+                className="border border-[#5a5b5d] py-2 px-4 rounded-lg"
+              >
+                Contact us
+              </motion.button>
+            </NavLink>
           </motion.div>
         </motion.div>
         <motion.div

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { ArrowTopDiagonal } from "../../icons/icons";
 
 const SectionThree = () => {
@@ -34,10 +35,12 @@ const SectionThree = () => {
             experiences.
           </h2>
 
-          <button className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[16px] lg:my-6 my-12">
-            <p>See all members</p>
-            <ArrowTopDiagonal />
-          </button>
+          <NavLink to="/team">
+            <button className="bg-[#3e4784] text-[#fff] flex items-center space-x-2 py-2 px-6 rounded-lg text-[16px] lg:my-6 my-12">
+              <p>See all members</p>
+              <ArrowTopDiagonal />
+            </button>
+          </NavLink>
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-16 lg:w-[50%]">
