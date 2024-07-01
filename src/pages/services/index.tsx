@@ -120,13 +120,71 @@ const Services = () => {
           <h2 className="text-center text-[#121212] my-6">
             Trusted by companies
           </h2>
-          <div className="w-[90vw] scroll-animation mx-auto overflow-x-auto grid lg:grid-cols-6 grid-cols-2 gap-y-10">
-            <img src="/assets/logos/canva.png" alt="canva" />
-            <img src="/assets/logos/notion.png" alt="notion" />
-            <img src="/assets/logos/slack.png" alt="slack" />
-            <img src="/assets/logos/dropbox.png" alt="dropbox" />
-            <img src="/assets/logos/github.png" alt="github" />
-            <img src="/assets/logos/youtube.png" alt="youtube" />
+          <div className="w-[90vw] mx-auto my-10 overflow-hidden">
+            <div className="flex items-center scroll-animation">
+              <div className="flex items-center space-x-10 lg:space-x-20">
+                <img
+                  src="/assets/logos/canva.png"
+                  alt="canva"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/notion.png"
+                  alt="notion"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/slack.png"
+                  alt="slack"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/dropbox.png"
+                  alt="dropbox"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/github.png"
+                  alt="github"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/youtube.png"
+                  alt="youtube"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/canva.png"
+                  alt="canva"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/notion.png"
+                  alt="notion"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/slack.png"
+                  alt="slack"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/dropbox.png"
+                  alt="dropbox"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/github.png"
+                  alt="github"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/youtube.png"
+                  alt="youtube"
+                  className="lg:w-[10vw]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

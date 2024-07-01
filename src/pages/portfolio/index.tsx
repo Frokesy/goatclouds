@@ -98,7 +98,7 @@ const Portfolio = () => {
   }, []);
   return (
     <Container active="portfolio">
-      <div className="bg-[#121212] text-[#fff] pt-[15vh]">
+      <div className="bg-[#121212] text-[#fff] lg:pt-[15vh] pt-10">
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -112,7 +112,7 @@ const Portfolio = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-offset="200"
-          className="lg:text-[48px] text-[32px] font-semibold text-center"
+          className="lg:text-[48px] text-[34px] font-semibold text-center"
         >
           Showcasing Our Excellence
         </h2>
@@ -138,13 +138,71 @@ const Portfolio = () => {
           <h2 className="text-center text-[#121212] my-6">
             Trusted by companies
           </h2>
-          <div className="w-[90vw] scroll-animation mx-auto overflow-x-auto grid lg:grid-cols-6 grid-cols-2 gap-y-10">
-            <img src="/assets/logos/canva.png" alt="canva" />
-            <img src="/assets/logos/notion.png" alt="notion" />
-            <img src="/assets/logos/slack.png" alt="slack" />
-            <img src="/assets/logos/dropbox.png" alt="dropbox" />
-            <img src="/assets/logos/github.png" alt="github" />
-            <img src="/assets/logos/youtube.png" alt="youtube" />
+          <div className="w-[90vw] mx-auto my-10 overflow-hidden">
+            <div className="flex items-center scroll-animation">
+              <div className="flex items-center space-x-10 lg:space-x-20">
+                <img
+                  src="/assets/logos/canva.png"
+                  alt="canva"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/notion.png"
+                  alt="notion"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/slack.png"
+                  alt="slack"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/dropbox.png"
+                  alt="dropbox"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/github.png"
+                  alt="github"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/youtube.png"
+                  alt="youtube"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/canva.png"
+                  alt="canva"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/notion.png"
+                  alt="notion"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/slack.png"
+                  alt="slack"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/dropbox.png"
+                  alt="dropbox"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/github.png"
+                  alt="github"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/youtube.png"
+                  alt="youtube"
+                  className="lg:w-[10vw]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

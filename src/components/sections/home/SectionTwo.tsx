@@ -77,7 +77,7 @@ const SectionTwo = () => {
         </div>
       </div>
 
-      <div className="lg:w-[80vw] w-[90vw] mx-auto flex lg:flex-row flex-col my-[10vh] items-center lg:space-x-10">
+      <div className="lg:w-[80vw] w-[90vw] mx-auto flex lg:flex-row flex-col lg:my-[10vh] my-10 items-center lg:space-x-10">
         <div
           className=""
           data-aos="fade-right"

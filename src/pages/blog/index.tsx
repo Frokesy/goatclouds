@@ -14,7 +14,7 @@ const Blog = () => {
   }, []);
   return (
     <Container active="blog">
-      <div className="bg-[#121212] lg:pt-[15vh] pt-10 text-[#fff]">
+      <div className="bg-[#121212] lg:pt-[15vh] pt-[10vh] text-[#fff]">
         <div className="w-[90vw] mx-auto lg:flex-row flex-col flex justify-between">
           <div className="lg:w-[45%]">
             <div
@@ -37,8 +37,8 @@ const Blog = () => {
                 results.
               </h2>
 
-              <div className="flex w-[100%] justify-between my-16">
-                <div className="bg-[#fff] flex w-[75%] items-center px-3 rounded-lg">
+              <div className="flex w-[100%] justify-between lg:my-16 my-8 lg:flex-row flex-col">
+                <div className="bg-[#fff] flex lg:w-[70%] items-center px-3 rounded-lg">
                   <input
                     type="text"
                     className="border-none outline-none w-[98%] py-2"
@@ -46,9 +46,14 @@ const Blog = () => {
                   />
                   <Search />
                 </div>
-                <button className="w-[20%] bg-[#3e4784] flex items-center justify-center rounded-lg">
+                <button className="lg:w-[25%] bg-[#3e4784] lg:flex hidden items-center justify-center py-2 px-4 rounded-lg">
                   Contact Us
                 </button>
+                <div className="lg:hidden flex justify-end mt-4">
+                  <button className="bg-[#3e4784] flex items-center justify-center py-2 px-4 rounded-lg">
+                    Contact Us
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -151,13 +156,71 @@ const Blog = () => {
           <h2 className="text-center text-[#121212] my-6">
             Trusted by companies
           </h2>
-          <div className="w-[90vw] mx-auto overflow-x-auto grid lg:grid-cols-6 grid-cols-2 gap-y-10">
-            <img src="/assets/logos/canva.png" alt="canva" />
-            <img src="/assets/logos/notion.png" alt="notion" />
-            <img src="/assets/logos/slack.png" alt="slack" />
-            <img src="/assets/logos/dropbox.png" alt="dropbox" />
-            <img src="/assets/logos/github.png" alt="github" />
-            <img src="/assets/logos/youtube.png" alt="youtube" />
+          <div className="w-[90vw] mx-auto my-10 overflow-hidden">
+            <div className="flex items-center scroll-animation">
+              <div className="flex items-center space-x-10 lg:space-x-20">
+                <img
+                  src="/assets/logos/canva.png"
+                  alt="canva"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/notion.png"
+                  alt="notion"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/slack.png"
+                  alt="slack"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/dropbox.png"
+                  alt="dropbox"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/github.png"
+                  alt="github"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/youtube.png"
+                  alt="youtube"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/canva.png"
+                  alt="canva"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/notion.png"
+                  alt="notion"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/slack.png"
+                  alt="slack"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/dropbox.png"
+                  alt="dropbox"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/github.png"
+                  alt="github"
+                  className="lg:w-[10vw]"
+                />
+                <img
+                  src="/assets/logos/youtube.png"
+                  alt="youtube"
+                  className="lg:w-[10vw]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

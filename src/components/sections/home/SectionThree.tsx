@@ -1,14 +1,23 @@
 import { ArrowTopDiagonal } from "../../icons/icons";
 
 const SectionThree = () => {
-
   return (
     <div className="bg-[#121212] text-[#fff] py-[10vh]">
-      <div className="text-[15px] flex items-center justify-center space-x-3">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        className="text-[15px] flex items-center justify-center space-x-3"
+      >
         <div className="h-0.5 w-6 bg-[#404040]"></div>
         <p>Our Team</p>
       </div>
-      <h2 className="lg:text-[48px] text-[36px] font-semibold text-center">
+      <h2
+        data-aos="zoom-in"
+        data-aos-duration="1300"
+        data-aos-offset="200"
+        className="lg:text-[48px] text-[36px] font-semibold text-center"
+      >
         Meet our team
       </h2>
 
@@ -40,7 +49,7 @@ const SectionThree = () => {
           >
             <img
               src="/assets/team/fr_one.png"
-              className="w-[100%] lg:h-[220px] h-[250px]"
+              className="w-[100%] lg:h-[220px] h-[280px]"
               alt="img"
             />
             <div className="space-y-2 my-3 px-4">
@@ -56,7 +65,7 @@ const SectionThree = () => {
           >
             <img
               src="/assets/team/fr_two.png"
-              className="w-[100%] lg:h-[220px] h-[250px]"
+              className="w-[100%] lg:h-[220px] h-[280px]"
               alt="img"
             />
             <div className="space-y-2 my-3 px-4">
@@ -76,7 +85,7 @@ const SectionThree = () => {
         >
           <img
             src="/assets/team/fr_three.png"
-            className="w-[100%] lg:h-[220px] h-[250px]"
+            className="w-[100%] lg:h-[220px] h-[280px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -92,7 +101,7 @@ const SectionThree = () => {
         >
           <img
             src="/assets/team/fr_four.png"
-            className="w-[100%] lg:h-[220px] h-[250px]"
+            className="w-[100%] lg:h-[220px] h-[280px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -108,7 +117,7 @@ const SectionThree = () => {
         >
           <img
             src="/assets/team/fr_five.png"
-            className="w-[100%] lg:h-[220px] h-[250px]"
+            className="w-[100%] lg:h-[220px] h-[280px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">
@@ -124,7 +133,7 @@ const SectionThree = () => {
         >
           <img
             src="/assets/team/fr_six.png"
-            className="w-[100%] lg:h-[220px] h-[250px]"
+            className="w-[100%] lg:h-[220px] h-[280px]"
             alt="img"
           />
           <div className="space-y-2 my-3 px-4">

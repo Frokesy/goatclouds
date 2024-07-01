@@ -28,8 +28,8 @@ const childVariants = {
 
 const Hero = () => {
   return (
-    <div className="bg-[#121212] text-[#fff] relative min-h-[90vh] w-[100%] lg:overflow-x-auto overflow-x-hidden">
-      <div className="flex lg:flex-row flex-col justify-between lg:pl-20 pl-6 lg:pt-[15vh] pt-10">
+    <div className="bg-[#121212] text-[#fff] relative min-h-[80vh] w-[100%] lg:overflow-x-auto overflow-x-hidden">
+      <div className="flex lg:flex-row flex-col justify-between lg:pl-20 px-6 lg:px-0 lg:pt-[15vh] pt-10">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -38,7 +38,7 @@ const Hero = () => {
         >
           <motion.h2
             variants={childVariants}
-            className="lg:text-[62px] text-[32px] font-semibold"
+            className="lg:text-[62px] text-[30px] font-semibold"
           >
             Crafting Digital Experiences with Precision and Creativity
           </motion.h2>
@@ -78,7 +78,7 @@ const Hero = () => {
           <img
             src="/assets/hero/hero_line_pattern.png"
             alt="linePattern"
-            className="z-20 lg:relative absolute lg:top-20 top-[20vh]"
+            className="z-20 lg:relative absolute lg:top-20 top-[5vh]"
           />
         </motion.div>
       </div>
