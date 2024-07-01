@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { FC, ReactNode } from "react";
+import ScrollToTop from "./ScrollToTop";
 
 interface PageTransitionProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 const PageTransition: FC<PageTransitionProps> = ({ children }) => {
   return (
@@ -12,7 +13,8 @@ const PageTransition: FC<PageTransitionProps> = ({ children }) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.75, ease: "easeInOut" }}
     >
-        {children}
+      <ScrollToTop />
+      {children}
     </motion.div>
   );
 };
