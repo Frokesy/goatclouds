@@ -8,7 +8,7 @@ const SectionFive = () => {
 
   return (
     <div className="bg-[#121212] py-[15vh] text-[#fff]">
-      <div className="w-[90vw] mx-auto flex lg:flex-row flex-col justify-between items-center">
+      <div className="w-[90vw] mx-auto flex lg:flex-row flex-col justify-between space-x-10 items-center">
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
@@ -30,7 +30,7 @@ const SectionFive = () => {
               Building great things
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-20 lg:pr-[15vw]">
+          <div className="grid grid-cols-2 gap-20">
             <div
               ref={ref}
               data-aos="fade-up"

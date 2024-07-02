@@ -56,7 +56,7 @@ const SectionEight = () => {
 
       <div className="overflow-x-auto mt-20">
         <div className="flex lg:grid lg:grid-cols-4 lg:gap-x-[22vw] gap-x-10 w-max lg:w-full">
-          <div className="space-y-4 w-[70vw] lg:w-[384px] flex-shrink-0 mx-2">
+          <div className="space-y-4 w-[70vw] lg:w-[25vw] flex-shrink-0 mx-2">
             <img src="/assets/blog/Image-1.png" alt="img" className="w-full" />
             <p className="text-[#808080] pt-2 font-semibold">
               Lana Steiner • 18 Jan 2022
@@ -78,7 +78,7 @@ const SectionEight = () => {
             </div>
           </div>
 
-          <div className="space-y-4 w-[70vw] lg:w-[384px] flex-shrink-0 mx-2">
+          <div className="space-y-4 w-[70vw] lg:w-[25vw] flex-shrink-0 mx-2">
             <img src="/assets/blog/Image-2.png" alt="img" className="w-full" />
             <p className="text-[#808080] pt-2 font-semibold">
               Alec Whitten • 17 Jan 2022
@@ -100,7 +100,7 @@ const SectionEight = () => {
             </div>
           </div>
 
-          <div className="space-y-4 w-[70vw] lg:w-[384px] flex-shrink-0 mx-2">
+          <div className="space-y-4 w-[70vw] lg:w-[25vw] flex-shrink-0 mx-2">
             <img src="/assets/blog/Image-3.png" alt="img" className="w-full" />
             <p className="text-[#808080] pt-2 font-semibold">
               Demi Wilkinson • 16 Jan 2022
@@ -121,7 +121,7 @@ const SectionEight = () => {
             </div>
           </div>
 
-          <div className="space-y-4 w-[70vw] lg:w-[384px] flex-shrink-0 mx-2">
+          <div className="space-y-4 w-[70vw] lg:w-[25vw] flex-shrink-0 mx-2">
             <img src="/assets/blog/Image-1.png" alt="img" className="w-full" />
             <p className="text-[#808080] pt-2 font-semibold">
               Lana Steiner • 18 Jan 2022

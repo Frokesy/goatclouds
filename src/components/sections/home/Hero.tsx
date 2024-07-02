@@ -29,8 +29,8 @@ const childVariants = {
 
 const Hero = () => {
   return (
-    <div className="bg-[#121212] text-[#fff] relative min-h-[80vh] w-[100%] lg:overflow-x-auto overflow-x-hidden">
-      <div className="flex lg:flex-row flex-col justify-between lg:pl-20 px-6 lg:px-0 lg:pt-[15vh] pt-10">
+    <div className="bg-[#121212] text-[#fff] relative min-h-[85vh] w-[100%] lg:overflow-x-auto overflow-x-hidden">
+      <div className="flex lg:flex-row flex-col justify-between lg:pl-20 px-6 lg:px-0 lg:pt-[12vh] pt-10">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -98,7 +98,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75, delay: 1.5, ease: "easeInOut" }}
-        className="px-20 lg:flex hidden items-center justify-center absolute -bottom-[30vh] bg-[#121212] w-[100%] pt-10"
+        className="px-20 lg:flex hidden items-center justify-center absolute -bottom-[35vh] bg-[#121212] w-[100%] pt-10"
       >
         <img src="/assets/hero/hero_img.png" alt="heroImg" className="z-30" />
       </motion.div>

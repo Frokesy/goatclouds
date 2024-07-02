@@ -30,7 +30,7 @@ const SectionSeven = () => {
 
         <div className="mt-16 overflow-x-auto">
           <div className="flex lg:grid lg:grid-cols-4 lg:gap-x-[20vw] gap-x-2 w-max lg:w-full">
-            <div className="lg:w-[384px] w-[80vw] flex-shrink-0 relative mx-2">
+            <div className="lg:w-[25vw] w-[80vw] flex-shrink-0 relative mx-2">
               <img
                 src="/assets/testimonials/te_one.png"
                 alt="img"
@@ -47,7 +47,7 @@ const SectionSeven = () => {
               </div>
             </div>
 
-            <div className="lg:w-[384px] w-[90vw] flex-shrink-0 relative mx-2">
+            <div className="lg:w-[25vw] w-[90vw] flex-shrink-0 relative mx-2">
               <img
                 src="/assets/testimonials/te_two.png"
                 alt="img"
@@ -64,7 +64,7 @@ const SectionSeven = () => {
               </div>
             </div>
 
-            <div className="lg:w-[384px] w-[90vw] flex-shrink-0 relative mx-2">
+            <div className="lg:w-[25vw] w-[90vw] flex-shrink-0 relative mx-2">
               <img
                 src="/assets/testimonials/te_three.png"
                 alt="img"
@@ -80,7 +80,7 @@ const SectionSeven = () => {
               </div>
             </div>
 
-            <div className="lg:w-[384px] w-[90vw] flex-shrink-0 relative mx-2">
+            <div className="lg:w-[25vw] w-[90vw] flex-shrink-0 relative mx-2">
               <img
                 src="/assets/testimonials/te_three.png"
                 alt="img"
