@@ -103,7 +103,7 @@ const Team = () => {
               data-aos="fade-up"
               data-aos-duration={item.duration}
               data-aos-offset="200"
-              className="border border-[#404040] rounded-2xl lg:w-[300px] w-[100%]"
+              className="border border-[#404040] rounded-2xl lg:w-[20vw] w-[100%]"
             >
               <img
                 src={item.img}

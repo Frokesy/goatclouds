@@ -29,7 +29,7 @@ const childVariants = {
 
 const Hero = () => {
   return (
-    <div className="bg-[#121212] text-[#fff] relative min-h-[85vh] w-[100%] lg:overflow-x-auto overflow-x-hidden">
+    <div className="bg-[#121212] text-[#fff] relative min-h-[80vh] w-[100%] lg:overflow-x-auto overflow-x-hidden">
       <div className="flex lg:flex-row flex-col justify-between lg:pl-20 px-6 lg:px-0 lg:pt-[12vh] pt-10">
         <motion.div
           initial="hidden"
