@@ -1,16 +1,50 @@
 import Container from "../../components/defaults/Container";
 import { ArrowRight, Search } from "../../components/icons/icons";
+import { getAllArticles } from "../../../services";
 import BlogItems from "../../components/sections/blog/BlogItems";
 import Paginator from "../../components/sections/blog/Paginator";
 import BottomSection from "../../components/sections/services/BottomSection";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { NavLink } from "react-router-dom";
 import LogoScroll from "../../components/defaults/LogoScroll";
 
+interface Article {
+  title: string;
+  slug: string;
+  coverPhoto: {
+    url: string;
+  };
+  categories: { name: string }[];
+  excerpt: string;
+  author: {
+    name: string;
+    avatar: {
+      url: string;
+    };
+  };
+}
+
 const Blog = () => {
+  const [articles, setArticles] = useState<Article[]>([]);
+
+  const fetchArticles = async () => {
+    try {
+      const fetchedArticles = await getAllArticles() as { articles: Article[] };
+      if (fetchedArticles && fetchedArticles.articles) {
+        setArticles(fetchedArticles.articles);
+      }
+    } catch (error) {
+      console.error("Error fetching articles:", error);
+    }
+  };
+
+  console.log(articles)
+
+
   useEffect(() => {
+    fetchArticles();
     AOS.init({ duration: 1000 });
   }, []);
   return (

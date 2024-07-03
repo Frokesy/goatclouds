@@ -54,11 +54,11 @@ const Hero = () => {
 
           <motion.div
             variants={childVariants}
-            className="text-[14px] flex space-x-6"
+            className="text-[14px] flex space-x-6 z-40"
           >
             <motion.button
               variants={childVariants}
-              className="flex border border-[#5a5b5d] py-2 px-4 rounded-lg space-x-2 z-40"
+              className="flex border border-[#5a5b5d]  py-2 px-4 rounded-lg space-x-2 z-40"
             >
               <span>View reel</span>
               <Play />
