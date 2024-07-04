@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Container from "../../components/defaults/Container";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Loader from "../../components/defaults/Loader";
 
 const Contact = () => {
-
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -10,13 +12,15 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = async () => {
+    setLoading(true);
     const emailContent = {
       to: "akindeleayanfeoluwa@gmail.com",
-      subject: `${data. firstName + ' ' + data.lastName} has a message for you`,
+      subject: `${data.firstName + " " + data.lastName} has a message for you`,
       body: data.message,
-    }
+    };
     await fetch("https://api.useplunk.com/v1/send", {
       method: "POST",
       body: JSON.stringify(emailContent),
@@ -27,11 +31,30 @@ const Contact = () => {
       },
     })
       .then((response) => response.json())
-      .then((response) => console.log(response))
+      .then((response) => {
+        if (response) {
+          setLoading(false);
+          toast.success("Message sent!", {
+            position: "top-center",
+            theme: "light",
+            autoClose: 2000,
+            hideProgressBar: true,
+            draggable: true,
+          });
+          setData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+        }
+      })
       .catch((err) => console.error(err));
   };
   return (
     <Container active="contact">
+      <ToastContainer />
       <div className="flex justify-between lg:flex-row flex-col">
         <div className="flex flex-col lg:space-y-10 space-y-6 lg:pl-[5vw] lg:w-[45%] w-[90vw] mx-auto lg:pt-[10vh] pt-10">
           <h2 className="lg:text-[48px] text-[36px] font-semibold">
@@ -46,7 +69,9 @@ const Contact = () => {
                   type="text"
                   placeholder="First Name"
                   value={data.firstName}
-                  onChange={(e) => setData({ ...data, firstName: e.target.value })}
+                  onChange={(e) =>
+                    setData({ ...data, firstName: e.target.value })
+                  }
                   className="bg-inherit border border-[#ccc] w-[100%] py-2 px-3 rounded-lg outline-none"
                 />
               </div>
@@ -56,7 +81,9 @@ const Contact = () => {
                   type="text"
                   placeholder="Last Name"
                   value={data.lastName}
-                  onChange={(e) => setData({ ...data, lastName: e.target.value })}
+                  onChange={(e) =>
+                    setData({ ...data, lastName: e.target.value })
+                  }
                   className="bg-inherit border border-[#ccc] w-[100%] py-2 px-3 rounded-lg outline-none"
                 />
               </div>
@@ -103,8 +130,11 @@ const Contact = () => {
               </p>
             </div>
 
-            <button onClick={sendEmail} className="bg-[#3e4784] text-[#fff] py-3 w-[100%] rounded-lg">
-              Confirm
+            <button
+              onClick={sendEmail}
+              className="bg-[#3e4784] text-[#fff] h-[48px] flex items-center justify-center py-3 w-[100%] rounded-lg"
+            >
+              {loading ? <Loader /> : 'Send message'}
             </button>
           </div>
         </div>
