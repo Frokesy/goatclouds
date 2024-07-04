@@ -17,7 +17,9 @@ interface Article {
     url: string;
   };
   categories: { name: string }[];
+  createdAt: string;
   excerpt: string;
+  featured: boolean;
   author: {
     name: string;
     avatar: {
@@ -31,7 +33,9 @@ const Blog = () => {
 
   const fetchArticles = async () => {
     try {
-      const fetchedArticles = await getAllArticles() as { articles: Article[] };
+      const fetchedArticles = (await getAllArticles()) as {
+        articles: Article[];
+      };
       if (fetchedArticles && fetchedArticles.articles) {
         setArticles(fetchedArticles.articles);
       }
@@ -40,8 +44,22 @@ const Blog = () => {
     }
   };
 
-  console.log(articles)
 
+  const formatDate = (isoDate: string) => {
+    const date = new Date(isoDate);
+
+    const options: Intl.DateTimeFormatOptions = {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      timeZone: "UTC",
+    };
+    const formattedDate: string = new Intl.DateTimeFormat(
+      "en-GB",
+      options
+    ).format(date);
+    return formattedDate;
+  };
 
   useEffect(() => {
     fetchArticles();
@@ -134,61 +152,71 @@ const Blog = () => {
             </div>
           </div>
 
-          <div
-            data-aos="fade-down"
-            data-aos-duration="2000"
-            data-aos-offset="200"
-            className="lg:w-[50%] mt-10 lg:mt-0 space-y-6"
-          >
-            <img src="/assets/blog/bl_one.png" alt="img" className="w-[100%]" />
-            <div className="flex space-x-6 text-[12px]">
-              <p className="text-[#808080]">Design</p>
-              <div className="flex items-center space-x-2">
-                <p>8 min read</p>
-                <ArrowRight />
-              </div>
-            </div>
-
-            <NavLink to="/blog/0" className="text-[24px] font-semibold">
-              The Future of Web Design: Trends to Watch in 2024
-            </NavLink>
-
-            <p>
-              Stay ahead of the curve with the latest web design trends. From
-              AI-driven design tools to immersive user experiences, discover
-              what&apos;s shaping the future of web design and how you can
-              leverage these trends for your projects.
-            </p>
-
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-offset="200"
-              className="text-[#3e4784]"
-            >
-              [Read More]
-            </p>
-
+          {articles.map((article, index) => (
             <div
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              key={index}
+              data-aos="fade-down"
+              data-aos-duration="2000"
               data-aos-offset="200"
-              className="flex items-center space-x-4"
+              className="lg:w-[50%] mt-10 lg:mt-0"
             >
-              <img src="/assets/blog/avatar.png" alt="avatar" />
-              <div className="text-[14px]">
-                <h2>Phoenix Baker</h2>
-                <p>19 Jan 2024</p>
-              </div>
+              {article.featured && (
+                <div className="space-y-6">
+                  <img
+                    src="/assets/blog/bl_one.png"
+                    alt="img"
+                    className="w-[100%]"
+                  />
+                  <div className="flex space-x-6 text-[12px]">
+                    <p className="text-[#808080]">Design</p>
+                    <div className="flex items-center space-x-2">
+                      <p>8 min read</p>
+                      <ArrowRight />
+                    </div>
+                  </div>
+
+                  <NavLink to={`/blog/${article.slug}`} className="text-[24px] font-semibold">
+                    {article.title}
+                  </NavLink>
+
+                  <p>{article.excerpt}</p>
+
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-offset="200"
+                    className="text-[#3e4784]"
+                  >
+                    [Read More]
+                  </p>
+
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-offset="200"
+                    className="flex items-center space-x-4"
+                  >
+                    <img
+                      src={article.author.avatar.url}
+                      className="w-[56px] h-[56px] rounded-full"
+                      alt="avatar"
+                    />
+                    <div className="text-[14px]">
+                      <h2>{article.author.name}</h2>
+                      <p>{formatDate(article.createdAt)}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
+          ))}
         </div>
         <BlogItems />
         <Paginator />
         <BottomSection />
 
         <div className="bg-[#fff] text-[#000] pt-6 pb-6">
-            <LogoScroll />
+          <LogoScroll />
         </div>
       </div>
     </Container>

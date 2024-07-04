@@ -1,3 +1,4 @@
+import React, { ReactNode, useEffect, useState } from "react";
 import Container from "../../components/defaults/Container";
 import {
   Copy,
@@ -5,26 +6,156 @@ import {
   LinkedIn,
   Twitter,
 } from "../../components/icons/icons";
+import { useNavigate, useParams } from "react-router-dom";
+import { getSingleBlog } from "../../../services";
+
+interface Blog {
+  title: string;
+  excerpt: string;
+  categories: { name: string }[];
+  createdAt: string;
+  author: { name: string; avatar: { url: string } };
+  coverPhoto: { url: string };
+  content: { html: string };
+}
+
+type Params = {
+  blog_id: string;
+};
+
+interface BlogData {
+  articles: Blog[];
+}
+const customStyle = {
+  p: "lg:text-[15px] text-[13px] mt-4",
+  h1: "lg:text-[32px] text-[22px] lg:pt-0 pt-4 pb-6 font-bold",
+  h2: "lg:text-[28px] text-[18px] lg:pt-0 pt-4 pb-6 font-bold",
+  h3: "lg:text-[24px] text-[16px] lg:pt-0 pt-4 pb-6 font-bold",
+  h4: "lg:text-[20px] text-[14px] lg:pt-0 pt-4 pb-6 font-bold",
+  h5: "lg:text-[16px] text-[12px] lg:pt-0 pt-4 pb-6 font-bold",
+  h6: "lg:text-[14px] text-[10px] lg:pt-0 pt-4 pb-6 font-bold",
+  ul: "lg:text-[15px] text-[13px] mt-4 list-disc list-inside",
+  ol: "lg:text-[15px] text-[13px] mt-4 list-decimal list-inside",
+  li: "lg:text-[15px] text-[13px] mt-4",
+  a: "lg:text-[15px] text-[13px] mt-4 text-blue-500",
+  blockquote: "lg:text-[24px] text-[20px] font-semibold italic text-[#ccc]",
+  code: "lg:text-[15px] text-[13px] mt-4 bg-gray-100 p-2",
+  pre: "lg:text-[15px] text-[13px] mt-4 bg-gray-100 p-2",
+  img: "w-[100%] h-[100%] my-3",
+};
 
 const BlogSlug = () => {
+  const { blog_id } = useParams() as Params;
+  const navigate = useNavigate();
+  const [singleBlog, setSingleBlog] = useState<Blog | null>(null);
+  const [parsedContent, setParsedContent] = useState<ReactNode[]>([]);
+
+  const parseHTML = (htmlContent: string) => {
+    const domParser = new DOMParser();
+    const parsedDocument = domParser.parseFromString(htmlContent, "text/html");
+    if (!parsedDocument.body) {
+      return [];
+    }
+    return Array.from(parsedDocument.body.childNodes).map((node, index) =>
+      parseNode(node, index)
+    );
+  };
+
+  const parseNode = (node: Node, index: number): ReactNode => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      return node.textContent;
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      const tagName = (node as Element).tagName.toLowerCase();
+      const children = Array.from(node.childNodes).map((childNode, i) =>
+        parseNode(childNode, i)
+      );
+
+      const attributes: { [key: string]: string } = {};
+      Array.from((node as Element).attributes).forEach((attr: Attr) => {
+        if (attr.name === "class") {
+          attributes["className"] = attr.value;
+        } else {
+          attributes[attr.name] = attr.value;
+        }
+      });
+
+      if (tagName === "br") {
+        return React.createElement(tagName, { key: index });
+      } else if (tagName === "img") {
+        if (customStyle[tagName]) {
+          return React.createElement(tagName, {
+            key: index,
+            className: customStyle[tagName],
+            ...attributes,
+          });
+        } else {
+          return React.createElement(tagName, { key: index, ...attributes });
+        }
+      } else if (customStyle[tagName as keyof typeof customStyle]) {
+        return React.createElement(
+          tagName,
+          {
+            key: index,
+            className: customStyle[tagName as keyof typeof customStyle],
+            ...attributes,
+          },
+          children
+        );
+      } else {
+        return React.createElement(
+          tagName,
+          { key: index, ...attributes },
+          children
+        );
+      }
+    }
+  };
+
+  console.log(parsedContent)
+
+  useEffect(() => {
+    const fetchBlog = async () => {
+      try {
+        if (blog_id) {
+          const blogData = (await getSingleBlog(blog_id)) as BlogData;
+          setSingleBlog(blogData.articles[0]);
+        }
+      } catch (error) {
+        navigate("/404");
+      }
+    };
+
+    fetchBlog();
+  }, []);
+
+  useEffect(() => {
+    if (singleBlog && typeof window !== "undefined") {
+      const parsedContent = parseHTML(singleBlog.content.html);
+      setParsedContent(parsedContent);
+    }
+  }, []);
+
+  // if (!singleBlog) return <>Loading...</>;
+
   return (
     <Container active="blog">
       <div className="bg-[#121212] text-[#fff] pt-[10vh]">
         <div className="flex flex-col justify-center items-center text-center space-y-6">
           <p className="text-[#3e4784]">Published 19 Jan 2024</p>
-          <h2 className="lg:text-[48px] text-[36px] font-semibold">
-            The Future of Web Design: Trends to <br /> Watch in 2024
+          <h2 className="lg:text-[48px] text-[36px] lg:w-[50%] font-semibold">
+            {singleBlog?.title}
           </h2>
           <p className="lg:w-[50%] px-6 lg:px-0 text-[#808080]">
-            Stay ahead of the curve with the latest web design trends. From
-            AI-driven design tools to immersive user experiences, discover
-            what&apos;s shaping the future of web design and how you can
-            leverage these trends for your projects.
+            {singleBlog?.excerpt}
           </p>
           <div className="flex items-center space-x-2">
-            <img src="/assets/blog/avatar.png" alt="avatar" />
+            <img
+              src={singleBlog?.author.avatar.url}
+              className="w-[56px] h-[56px] rounded-full"
+              alt="avatar"
+            />
             <div className="text-[14px]">
-              <h2>Phoenix Baker</h2>
+              <h2>{singleBlog?.author.name}</h2>
               <p>19 Jan 2024</p>
             </div>
           </div>
@@ -32,13 +163,16 @@ const BlogSlug = () => {
 
         <div className="w-[90vw] mx-auto">
           <img
-            src="/assets/blog/hero.png"
+            src={singleBlog?.coverPhoto.url}
             alt="hero"
             className="w-[100%] mt-20"
           />
         </div>
 
         <div className="lg:w-[50%] w-[90%] mx-auto">
+          {/* {parsedContent.map((element, index) => (
+            <React.Fragment key={index}>{element}</React.Fragment>
+          ))} */}
           <div className="border-b border-[#ccc] pt-[10vh]"></div>
           <h2 className="pt-10 lg:text-[30px] text-[24px] font-semibold">
             Introduction
@@ -232,7 +366,11 @@ const BlogSlug = () => {
           <div className="mt-[10vh] flex lg:flex-row flex-col justify-between lg:space-x-10">
             <div className="flex lg:flex-row flex-col justify-between lg:w-[45%]">
               <div className="relative lg:w-[320px]">
-                <img src="/assets/blog/bl_two.png" alt="img" className="w-[100%]" />
+                <img
+                  src="/assets/blog/bl_two.png"
+                  alt="img"
+                  className="w-[100%]"
+                />
                 <div className="absolute flex justify-between bg-[#fff] w-[100%] bottom-0 bg-opacity-30 space-y-4 backdrop-blur-sm py-4 px-3">
                   <div className="flex flex-col">
                     <p>Olivia Rhye</p>
