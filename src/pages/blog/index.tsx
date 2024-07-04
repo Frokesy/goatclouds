@@ -91,7 +91,7 @@ const Blog = () => {
               </h2>
 
               <div className="flex w-[100%] justify-between lg:my-16 my-8 lg:flex-row flex-col">
-                <div className="bg-[#fff] flex lg:w-[70%] items-center px-3 rounded-lg">
+                <div className="bg-[#fff] flex lg:w-[70%] items-center px-3 rounded-lg text-[#121212]">
                   <input
                     type="text"
                     className="border-none outline-none w-[98%] py-2"

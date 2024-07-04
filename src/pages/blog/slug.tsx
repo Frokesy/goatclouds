@@ -8,6 +8,7 @@ import {
 } from "../../components/icons/icons";
 import { useNavigate, useParams } from "react-router-dom";
 import { getSingleBlog } from "../../../services";
+import Loader from "../../components/defaults/Loader";
 
 interface Blog {
   title: string;
@@ -27,21 +28,21 @@ interface BlogData {
   articles: Blog[];
 }
 const customStyle = {
-  p: "lg:text-[15px] text-[13px] mt-4",
-  h1: "lg:text-[32px] text-[22px] lg:pt-0 pt-4 pb-6 font-bold",
+  p: "mt-4",
+  h1: "pt-10 lg:text-[30px] text-[24px] font-semibold",
   h2: "lg:text-[28px] text-[18px] lg:pt-0 pt-4 pb-6 font-bold",
   h3: "lg:text-[24px] text-[16px] lg:pt-0 pt-4 pb-6 font-bold",
   h4: "lg:text-[20px] text-[14px] lg:pt-0 pt-4 pb-6 font-bold",
   h5: "lg:text-[16px] text-[12px] lg:pt-0 pt-4 pb-6 font-bold",
   h6: "lg:text-[14px] text-[10px] lg:pt-0 pt-4 pb-6 font-bold",
-  ul: "lg:text-[15px] text-[13px] mt-4 list-disc list-inside",
-  ol: "lg:text-[15px] text-[13px] mt-4 list-decimal list-inside",
-  li: "lg:text-[15px] text-[13px] mt-4",
+  ul: "lg:text-[15px] text-[13px] mt-4 list-disc",
+  ol: "lg:text-[15px] text-[13px] mt-4 flex flex-col list-decimal space-y-6 mt-6",
+  li: "lg:text-[15px] text-[13px] mt-4 ",
   a: "lg:text-[15px] text-[13px] mt-4 text-blue-500",
   blockquote: "lg:text-[24px] text-[20px] font-semibold italic text-[#ccc]",
-  code: "lg:text-[15px] text-[13px] mt-4 bg-gray-100 p-2",
-  pre: "lg:text-[15px] text-[13px] mt-4 bg-gray-100 p-2",
-  img: "w-[100%] h-[100%] my-3",
+  code: "lg:text-[15px] text-[13px] mt-4 p-2",
+  pre: "lg:text-[15px] text-[13px] mt-4 border-l-4 border-[#3e4784] px-6 space-y-4 p-2",
+  img: "w-[100%] h-[100%] my-10",
 };
 
 const BlogSlug = () => {
@@ -111,7 +112,7 @@ const BlogSlug = () => {
     }
   };
 
-  console.log(parsedContent)
+  console.log(parsedContent);
 
   useEffect(() => {
     const fetchBlog = async () => {
@@ -135,7 +136,14 @@ const BlogSlug = () => {
     }
   }, []);
 
-  // if (!singleBlog) return <>Loading...</>;
+  if (!singleBlog)
+    return (
+      <>
+        <div className="flex items-center justify-center h-[100%]">
+          <Loader />
+        </div>
+      </>
+    );
 
   return (
     <Container active="blog">
@@ -170,10 +178,10 @@ const BlogSlug = () => {
         </div>
 
         <div className="lg:w-[50%] w-[90%] mx-auto">
-          {/* {parsedContent.map((element, index) => (
+          {parsedContent.map((element, index) => (
             <React.Fragment key={index}>{element}</React.Fragment>
-          ))} */}
-          <div className="border-b border-[#ccc] pt-[10vh]"></div>
+          ))}
+          {/* <div className="border-b border-[#ccc] pt-[10vh]"></div>
           <h2 className="pt-10 lg:text-[30px] text-[24px] font-semibold">
             Introduction
           </h2>
@@ -287,7 +295,7 @@ const BlogSlug = () => {
               3. Subtle Animations: Enhance minimalist designs with subtle
               animations to guide user interaction and add a touch of elegance.
             </li>
-          </ol>
+          </ol> */}
 
           <div className="bg-[#fff] text-[#808080] lg:p-6 p-4 rounded-xl mt-20">
             <h2 className="text-[24px] font-semibold text-[#121212]">
