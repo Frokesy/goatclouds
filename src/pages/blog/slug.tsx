@@ -112,8 +112,6 @@ const BlogSlug = () => {
     }
   };
 
-  console.log(parsedContent);
-
   useEffect(() => {
     const fetchBlog = async () => {
       try {
